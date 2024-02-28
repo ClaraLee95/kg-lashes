@@ -1,13 +1,29 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+body {
+	font-family: "Montserrat Variable", sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-family: "DM Serif Display", serif;
+	font-family: "Prata", serif;
+	font-family: "Old Standard TT", serif;
+	font-family: "Bodoni Moda", serif;
+	font-family: "Vidaloka", serif;
+	font-family: "Libre Bodoni", serif;
+	font-family: "Noto Serif Display", serif;
+	font-family: "Trirong", serif;
+	font-family: "Chonburi", serif;
+	font-family: "Montserrat", sans-serif;
+	font-family: "Cormorant Garamond", serif;
 }

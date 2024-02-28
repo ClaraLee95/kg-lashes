@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./components/NavBar/Navbar";
+import UnderConstruction from "./views/UnderConstruction/UnderConstruction";
+import { BrowserRouter } from "react-router-dom";
+import "./App.scss";
+import CookieConsent from "react-cookie-consent";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	// Cookie for later
+	// <CookieConsent
+	// 	location="bottom"
+	// 	buttonText="I agree"
+	// 	cookieName="myAppCookieConsent"
+	// 	style={{ background: "#2B373B" }}
+	// 	buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+	// 	expires={150}>
+	// 	This website uses cookies to enhance the user experience.
+	// </CookieConsent>;
+	return (
+		<div>
+			<BrowserRouter>
+				<NavBar />
+			</BrowserRouter>
+			<UnderConstruction></UnderConstruction>
+		</div>
+	);
+};
 
 export default App;

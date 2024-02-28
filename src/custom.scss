@@ -1,0 +1,36 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+	"light": #ece5da,
+	"mid": #d0b69a,
+	"dark": #936e4c,
+	"darker": #554f4b,
+	"error": #8c1f1f,
+);
+
+// $light: #ece5da;
+// $light: #e2ded8;
+$light: #dfd8cd;
+// $light: #dfdbd2;
+// $mid: #d0b69a;
+$mid: #dad0c2;
+$dark: #936e4c;
+$darker: #554f4b;
+$error: #8c1f1f;
+
+$text_DM: "DM Serif Display", serif;
+$text_montserrat: "Montserrat", sans-serif;
+$text_poppins: "Poppins", sans-serif;
+$text_prata: "Prata", serif;
+$text_oldTT: "Old Standard TT", serif;
+$text_bodoni: "Bodoni Moda", serif;
+$text_vidaloka: "Vidaloka", serif;
+$text_libreBodoni: "Libre Bodoni", serif;
+$text_noto: "Noto Serif Display", serif;
+$text_tirong: "Trirong", serif;
+$text_chonburi: "Chonburi", serif;
+$text_comorant: "Cormorant Garamond", serif;
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
