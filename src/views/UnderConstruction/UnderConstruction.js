@@ -1,5 +1,6 @@
 import React from "react";
-import logoBig from "../../assets/LogoBig2.png";
+import logoBigTop from "../../assets/LogoBigTopTransparent.png";
+import logoBigBottom from "../../assets/LogoBigBottomTransparent.png";
 import "./UnderConstruction.scss";
 
 import { FaPhone } from "react-icons/fa6";
@@ -12,7 +13,8 @@ function UnderConstruction() {
 			<div className="backgroundContainer">
 				<div className="infoContainer">
 					<div className="logoBigContainer">
-						<img className="logoBig" src={logoBig} alt="" />
+						<img className="logoTop" src={logoBigTop} alt="" />
+						<img className="logoBottom" src={logoBigBottom} alt="" />
 					</div>
 					<div className="verticalLineContainer">
 						<div className="verticalLine"></div>
@@ -45,8 +47,6 @@ function UnderConstruction() {
 					</div>
 				</div>
 			</div>
-
-			{/* <img className="homeImage" src={blurry} alt="" /> */}
 		</div>
 	);
 }

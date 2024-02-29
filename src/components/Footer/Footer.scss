@@ -10,16 +10,19 @@
 	text-align: center;
 	margin: auto;
 
-	.verticalLineContainer {
-		padding: 5% 5%;
-		margin: auto;
-		text-align: center;
-	}
-	.verticalLine {
-		width: 80px;
-		background-color: $darker;
-		height: 1.1px;
-	}
+	padding-top: 0.8rem;
+	border-top: 1.2px solid $darker;
+
+	// .horizontalLineContainer {
+	// 	padding: 5%;
+	// 	margin: auto;
+	// 	text-align: center;
+	// }
+	// .horizontalLine {
+	// 	width: 80px;
+	// 	background-color: $darker;
+	// 	height: 1.2px;
+	// }
 
 	a {
 		font-family: $text_noto;
@@ -33,11 +36,11 @@
 		vertical-align: middle;
 	}
 	.footerItem:not(:last-child) {
-		border-right: 1.2px solid $dark;
+		border-right: 1.2px solid $darker;
 	}
 
-	.menuItem {
-		font-size: 1rem;
+	.footerText {
+		font-size: 0.8rem;
 	}
 }
 

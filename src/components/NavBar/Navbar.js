@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import hamburger from "../../assets/hamburger.png";
-import logoSmall from "../../assets/LogoSmall2.png";
+import logoSmall from "../../assets/LogoSmallTransparent.png";
 
 import "./NavBar.scss";
 
@@ -15,7 +15,7 @@ function NavBar() {
 	};
 
 	return (
-		<nav className="navbar">
+		<nav className="navBar">
 			<div className="container">
 				<div className="logo">
 					<NavLink to="/">
