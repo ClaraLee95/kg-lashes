@@ -10,52 +10,27 @@ function Footer() {
 	const year = new Date().getFullYear();
 	return (
 		<div className="footerContainer">
+			<div className="verticalLineContainer">
+				<div className="verticalLine"></div>
+			</div>
 			<div className="footerRow">
-				<div className="footerColumn">
-					<div className="columnHeater">KG Aesthetic Lashes</div>
-					<div className="listContainer">
-						<div className="contactItem">
-							<div className="contactIcon">
-								<FaPhone size={12} />
-							</div>
-							<div className="contactText">0163 1320591</div>
-						</div>
-						<div className="contactItem">
-							<div className="contactIcon">
-								<IoLocationSharp size={12} />
-							</div>
-							<div className="contactText">85307 Paunzhausen</div>
-						</div>
-						<div className="contactItem">
-							<div className="contactIcon">
-								<FaInstagramSquare size={12} />
-							</div>
-							<div className="contactText">kg.aestheticlashes</div>
-						</div>
-					</div>
+				<div className="footerItem">&copy;{year} KG Aesthetic Lashes</div>
+				<div className="footerItem">
+					<NavLink className="menuItem" to="/datenschutzerklärung">
+						Datenschutzerklärung
+					</NavLink>
 				</div>
-				<div className="footerColumn">
-					<div className="columnHeater"></div>
-					<ul className="columnList">
-						<li>
-							<NavLink className="menuItem" to="/datenschutzerklärung">
-								Datenschutzerklärung
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className="menuItem" to="/impressum">
-								Impressum
-							</NavLink>
-						</li>
-						<li>
-							<NavLink className="menuItem" to="/kontakt">
-								Kontakt
-							</NavLink>
-						</li>
-					</ul>
+				<div className="footerItem">
+					<NavLink className="menuItem" to="/impressum">
+						Impressum
+					</NavLink>
+				</div>
+				<div className="footerItem">
+					<NavLink className="menuItem" to="/kontakt">
+						Kontakt
+					</NavLink>
 				</div>
 			</div>
-			<div className="footerRow">&copy;{year} KG Aesthetic Lashes</div>
 		</div>
 	);
 }
