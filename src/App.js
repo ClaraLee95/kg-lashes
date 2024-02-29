@@ -4,6 +4,7 @@ import UnderConstruction from "./views/UnderConstruction/UnderConstruction";
 import { BrowserRouter } from "react-router-dom";
 import "./App.scss";
 import CookieConsent from "react-cookie-consent";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
 	// Cookie for later
@@ -17,11 +18,14 @@ const App = () => {
 	// 	This website uses cookies to enhance the user experience.
 	// </CookieConsent>;
 	return (
-		<div>
+		<div className="pageContainer">
 			<BrowserRouter>
-				<NavBar />
+				<div className="contentContainer">
+					<NavBar />
+					<UnderConstruction></UnderConstruction>
+				</div>
+				<Footer></Footer>
 			</BrowserRouter>
-			<UnderConstruction></UnderConstruction>
 		</div>
 	);
 };

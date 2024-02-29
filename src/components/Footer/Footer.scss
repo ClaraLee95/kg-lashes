@@ -1,0 +1,65 @@
+@import "../../custom.scss";
+
+.footerContainer {
+	background-color: $mid;
+	position: relative;
+	bottom: 0;
+	border-top: 1px solid $dark;
+	height: 100%;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+
+	.listContainer {
+		margin: auto;
+		max-width: 20vw;
+	}
+	.contactItem {
+		padding: 0.2rem 0.2rem;
+		vertical-align: middle;
+		display: inline-flex;
+	}
+	.contactIcon {
+		margin: auto;
+		width: 10px;
+	}
+	.contactText {
+		margin-left: 1rem;
+		font-size: 0.8rem;
+	}
+
+	a {
+		font-family: $text_noto;
+	}
+
+	.menuItem {
+		font-size: 1rem;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+	ul li {
+		margin: 0 10px;
+	}
+
+	ul a {
+		font-size: 16px;
+		font-weight: 400;
+		color: #2f234f;
+		text-decoration: none;
+	}
+}
+
+.footerRow {
+	float: right;
+	width: 80vw;
+	font-family: $text_noto;
+	display: flex;
+	flex-direction: row;
+}
+
+.footerColumn {
+	display: flex;
+	flex-direction: column;
+}

@@ -9,8 +9,7 @@ import { IoLocationSharp } from "react-icons/io5";
 function UnderConstruction() {
 	return (
 		<div>
-			<div className="blurOver"></div>
-			<div className="onTopContainer">
+			<div className="backgroundContainer">
 				<div className="infoContainer">
 					<div className="logoBigContainer">
 						<img className="logoBig" src={logoBig} alt="" />
@@ -46,6 +45,7 @@ function UnderConstruction() {
 					</div>
 				</div>
 			</div>
+
 			{/* <img className="homeImage" src={blurry} alt="" /> */}
 		</div>
 	);
