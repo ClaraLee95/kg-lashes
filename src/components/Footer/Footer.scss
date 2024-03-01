@@ -13,16 +13,16 @@
 	padding-top: 0.8rem;
 	// border-top: 1.2px solid $light;
 
-	// .horizontalLineContainer {
-	// 	padding: 5%;
-	// 	margin: auto;
-	// 	text-align: center;
-	// }
-	// .horizontalLine {
-	// 	width: 80px;
-	// 	background-color: $darker;
-	// 	height: 1.2px;
-	// }
+	.lineContainer {
+		padding: 5px;
+		margin: auto;
+		text-align: center;
+	}
+	.line {
+		width: 1.2px;
+		background-color: $light;
+		height: 15px;
+	}
 
 	a {
 		text-decoration: none;
@@ -34,7 +34,7 @@
 		vertical-align: middle;
 	}
 	.footerItem:not(:last-child) {
-		border-right: 1.2px solid $light;
+		// border-right: 1.2px solid $light;
 	}
 
 	.footerText {
@@ -54,4 +54,20 @@
 .footerColumn {
 	display: flex;
 	flex-direction: column;
+}
+
+@media (max-width: 600px) {
+	.footerRow {
+		flex-direction: column;
+	}
+
+	.footerContainer {
+		.lineContainer {
+			padding: 0.2rem;
+		}
+		.line {
+			width: 20px;
+			height: 1.2px;
+		}
+	}
 }

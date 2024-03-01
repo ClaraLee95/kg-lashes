@@ -143,4 +143,16 @@
 	.homeImage {
 		max-width: 500%;
 	}
+
+	.infoContainer {
+		height: 100%;
+	}
+
+	.logoTop,
+	.logoBottom {
+		opacity: 2;
+		max-width: 1vw;
+		min-width: 150px;
+		margin: 0 auto;
+	}
 }
