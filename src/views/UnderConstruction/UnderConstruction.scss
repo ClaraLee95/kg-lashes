@@ -16,10 +16,10 @@
 }
 
 .infoContainer {
-	width: 80vw;
+	width: 75vw;
 	height: 50vh;
-	max-width: 1600px;
-	max-height: 800px;
+	max-width: 1400px;
+	max-height: 500px;
 	min-height: 500px;
 	background-color: rgba($light, 0.5);
 	margin: auto;
@@ -30,16 +30,20 @@
 }
 
 .logoBigContainer {
-	padding: 5%;
 	margin: auto;
-	min-width: 400px;
+	max-width: 25vw;
+	min-width: 15vw;
 	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 .logoTop,
 .logoBottom {
 	opacity: 2;
 	max-width: 5vw;
-	min-width: 400px;
+	min-width: 300px;
+	margin: 0 auto;
 }
 
 .verticalLineContainer {
@@ -50,6 +54,7 @@
 	background-color: $darker;
 	height: 100%;
 	float: left;
+	opacity: 0.5;
 }
 
 .listContainer {
@@ -57,17 +62,16 @@
 	max-width: 20vw;
 }
 .contactContainer {
-	padding: 5%;
 	font-family: $text_prata;
 	margin: auto;
-	min-width: 400px;
+	max-width: 25vw;
+	min-width: 15vw;
 }
 .underConstructionText {
 	text-align: center;
 	padding: 2rem;
 	font-weight: 400;
-	font-size: 1.5rem;
-	max-width: 630px;
+	font-size: 1.3rem;
 }
 .contactItem {
 	padding: 0.8rem 0.5rem;
@@ -87,11 +91,16 @@
 @media (max-width: 1000px) {
 	.infoContainer {
 		width: 80vw;
-		height: 80vh;
-		background-color: $light;
+		height: 95vh;
 		margin: auto;
+		margin-top: 5%;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.logoBigContainer {
+		max-width: 50vw;
+		margin: 2rem auto;
 	}
 
 	.verticalLineContainer {
@@ -105,8 +114,22 @@
 	}
 
 	.listContainer {
-		margin: auto;
+		max-width: 35vw;
+	}
+	.contactContainer {
 		max-width: 50vw;
+		margin: 2rem auto;
+	}
+
+	.underConstructionText {
+		padding: 1rem;
+		font-size: 1rem;
+	}
+	.contactIcon {
+		width: 20px;
+	}
+	.contactText {
+		font-size: 1rem;
 	}
 }
 

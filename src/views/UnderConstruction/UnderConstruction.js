@@ -22,7 +22,7 @@ function UnderConstruction() {
 					<div className="contactContainer">
 						<div className="underConstructionText">
 							Diese Website befindet sich derzeit im Aufbau. Bitte kontaktieren
-							Sie uns über unten:
+							Sie uns über:
 						</div>
 						<div className="listContainer">
 							<div className="contactItem">

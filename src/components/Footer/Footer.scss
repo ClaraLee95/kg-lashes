@@ -11,7 +11,7 @@
 	margin: auto;
 
 	padding-top: 0.8rem;
-	border-top: 1.2px solid $darker;
+	// border-top: 1.2px solid $light;
 
 	// .horizontalLineContainer {
 	// 	padding: 5%;
@@ -25,9 +25,7 @@
 	// }
 
 	a {
-		font-family: $text_noto;
 		text-decoration: none;
-		color: black;
 	}
 
 	.footerItem {
@@ -36,10 +34,13 @@
 		vertical-align: middle;
 	}
 	.footerItem:not(:last-child) {
-		border-right: 1.2px solid $darker;
+		border-right: 1.2px solid $light;
 	}
 
 	.footerText {
+		color: white;
+		font-weight: 500;
+		font-family: $text_noto;
 		font-size: 0.8rem;
 	}
 }
