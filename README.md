@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# KG Aesthetic Lashes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Overview](#overview)
+- [Installation](#installation)
+- [Built With](#built-with)
+- [Features](#features)
+- [Project Status](#status)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+<!-- TODO: Add a screenshot of the live project.
+    1. Link to a 'live demo.'
+    2. Describe your overall experience in a couple of sentences.
+    3. List a few specific technical things that you learned or improved on.
+    4. Share any other tips or guidance for others attempting this or something similar.
+ -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The purpose of this project is to create a website for KG Aesthetic Lashes to showcase the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- UI Design
+- Front-end development with React JS
 
-### `npm test`
+The main functionalities of the website is to present business-related data, such was services offered, price list, and contact information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### UI Example 1 - Under Construction Page
 
-### `npm run build`
+<img src="./src/assets/readme_underConstruction.png" alt="Under Construction Page" style="width:350px;height:auto;">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### UI Example 2 - Under Construction Page (Mobile)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./src/assets/readme_underConstruction_mobile.png" alt="Under Construction Page (Mbile)" style="width:180px;height:auto;">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Run `npm install` to install necessary packages to run the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once installation is completed, run `npm start` to startup the application locally.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [React](https://react.dev/)
+- [Sass](https://sass-lang.com/)
+- [styled-components](https://styled-components.com/)
+- [React Bootstrap](https://react-bootstrap.netlify.app/)
+- [React Router](https://reactrouter.com/en/main)
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+- [Node JS](https://nodejs.org/en)
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- TODO: List what specific 'user problems' that this application solves. -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Landing Page
 
-### Code Splitting
+The main page that is loaded when end-users access the website. It includes logo and preview for some of the subfeatures such as 'Uber Mich', 'Was Biete Ich', and 'FAQs'.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Uber Mich
 
-### Analyzing the Bundle Size
+Introduction page for the business owner (Katharina Gleixner).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Was Biete Ich
 
-### Making a Progressive Web App
+Introduction page for the business and provided services.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Preisliste
 
-### Advanced Configuration
+Price list page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### FAQs
 
-### Deployment
+Frequently asked questions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Gallery
 
-### `npm run build` fails to minify
+Gallery with photos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Kontakt
+
+Contact page with a form that sends an email.
+
+## Project Status
+
+## Contact
+
+<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+
+## Acknowledgements
+
+<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->

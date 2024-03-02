@@ -1,16 +1,9 @@
 @import "../../custom.scss";
 
-/* override bootstrap navbar colors */
 .navBar {
 	width: 100vw;
-	// background-image: linear-gradient(
-	// 	to bottom,
-	// 	$light 0,
-	// 	$light 100%
-	// ) !important; /* override background image gradient w/ flat color */
 	padding: 8px 0;
 	z-index: 2;
-	// position: fixed;
 }
 
 .logoSmall {

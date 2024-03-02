@@ -1,9 +1,5 @@
 import React from "react";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaPhone } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import { IoLocationSharp } from "react-icons/io5";
 import "./Footer.scss";
 
 function Footer() {
