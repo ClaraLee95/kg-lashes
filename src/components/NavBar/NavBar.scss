@@ -1,9 +1,12 @@
 @import "../../custom.scss";
 
 .navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
 	margin: 0 auto;
-	padding-top: 1.3rem;
-	padding-left: 3rem;
+	padding: 1.3rem 3rem;
 	align-items: center;
 
 	width: 100vw;
@@ -11,6 +14,20 @@
 
 	.logoSmall {
 		width: 40px;
+	}
+}
+
+.menuContainer {
+	a {
+		margin: 1rem;
+		color: $darkest;
+		text-decoration: none;
+		font-family: $text_noto;
+		font-weight: 400;
+	}
+
+	a.active {
+		font-weight: 700;
 	}
 }
 

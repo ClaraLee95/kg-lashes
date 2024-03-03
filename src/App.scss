@@ -18,19 +18,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url("./assets/background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100vw;
-	height: 80vh;
-	z-index: 1;
+	background-color: $light !important;
 }
 
 .pageContainer {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	height: 100%;
 }
 
 .contentContainer {
