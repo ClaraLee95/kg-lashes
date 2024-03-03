@@ -9,6 +9,7 @@ $theme-colors: (
 	"error": #8c1f1f,
 );
 
+/* Color Theme */
 // $light: #ece5da;
 // $light: #e2ded8;
 // $light: #dfd8cd;
@@ -23,6 +24,7 @@ $dark: #936e4c;
 $darker: #554f4b;
 $error: #8c1f1f;
 
+/* Typography */
 $text_DM: "DM Serif Display", serif;
 $text_montserrat: "Montserrat", sans-serif;
 $text_poppins: "Poppins", sans-serif;
@@ -35,6 +37,17 @@ $text_noto: "Noto Serif Display", serif;
 $text_tirong: "Trirong", serif;
 $text_chonburi: "Chonburi", serif;
 $text_comorant: "Cormorant Garamond", serif;
+
+/* Screen Sizes */
+$desktop: 1800px;
+$tablet: 1024px;
+$small-tablet: 712px;
+$phone: 480px;
+$small-phone: 360px;
+
+// @media (max-width: $tablet) {}
+// @media (max-width: $small-tablet) {}
+// @media (max-width: $phone) {}
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";

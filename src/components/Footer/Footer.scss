@@ -1,53 +1,57 @@
 @import "../../custom.scss";
 
 .footerContainer {
-	position: relative;
-	bottom: 0;
-	height: 100%;
-	padding: 2rem 0;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	text-align: center;
-	margin: auto;
 
+	margin: auto;
+	bottom: 0;
+	padding: 2rem 0;
 	padding-top: 0.8rem;
+
+	height: 100%;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.footerRow {
+	display: flex;
+	flex-direction: row;
+
+	font-family: $text_prata;
 
 	.lineContainer {
 		padding: 5px;
 		margin: auto;
 		text-align: center;
-	}
-	.line {
-		width: 1.2px;
-		background-color: $light;
-		height: 15px;
-	}
 
-	a {
-		text-decoration: none;
+		.line {
+			background-color: $light;
+
+			width: 1.5px;
+			height: 15px;
+		}
 	}
 
 	.footerItem {
-		padding: 0 0.5rem;
 		margin: auto;
+		padding: 0 0.5rem;
 		vertical-align: middle;
+
+		.footerText {
+			color: white;
+			font-weight: 600;
+			font-family: $text_noto;
+			font-size: 1rem;
+		}
 	}
 	.footerItem:not(:last-child) {
 		// border-right: 1.2px solid $light;
 	}
-
-	.footerText {
-		color: white;
-		font-weight: 500;
-		font-family: $text_noto;
-		font-size: 0.8rem;
-	}
-}
-
-.footerRow {
-	font-family: $text_noto;
-	display: flex;
-	flex-direction: row;
 }
 
 .footerColumn {
@@ -55,18 +59,32 @@
 	flex-direction: column;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $small-tablet) {
+	.footerRow {
+		.footerItem {
+			.footerText {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+@media (max-width: $phone) {
 	.footerRow {
 		flex-direction: column;
-	}
 
-	.footerContainer {
 		.lineContainer {
 			padding: 0.2rem;
+
+			.line {
+				width: 20px;
+				height: 1.5px;
+			}
 		}
-		.line {
-			width: 20px;
-			height: 1.2px;
+
+		.footerItem {
+			.footerText {
+				font-size: 0.7rem;
+			}
 		}
 	}
 }

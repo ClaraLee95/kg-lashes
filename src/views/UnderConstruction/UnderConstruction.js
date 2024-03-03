@@ -27,21 +27,42 @@ function UnderConstruction() {
 						<div className="listContainer">
 							<div className="contactItem">
 								<div className="contactIcon">
-									<FaPhone size={24} />
+									<FaPhone value={{ className: "contactIcon" }} />
 								</div>
-								<div className="contactText">0163 1320591</div>
+								<div className="contactText">
+									<a
+										href="tel:+4901631320591"
+										target="_blank"
+										rel="noopener noreferrer">
+										0163 1320591
+									</a>
+								</div>
 							</div>
 							<div className="contactItem">
 								<div className="contactIcon">
-									<IoLocationSharp size={24} />
+									<IoLocationSharp value={{ className: "contactIcon" }} />
 								</div>
-								<div className="contactText">85307 Paunzhausen</div>
+								<div className="contactText">
+									<a
+										href="https://maps.app.goo.gl/nrpRBojQKBVuDACt8"
+										target="_blank"
+										rel="noopener noreferrer">
+										85307 Paunzhausen
+									</a>
+								</div>
 							</div>
 							<div className="contactItem">
 								<div className="contactIcon">
-									<FaInstagramSquare size={24} />
+									<FaInstagramSquare value={{ className: "contactIcon" }} />
 								</div>
-								<div className="contactText">kg.aestheticlashes</div>
+								<div className="contactText">
+									<a
+										href="https://www.instagram.com/kg.aestheticlashes/"
+										target="_blank"
+										rel="noopener noreferrer">
+										kg.aestheticlashes
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>

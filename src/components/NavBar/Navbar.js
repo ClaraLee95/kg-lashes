@@ -7,12 +7,10 @@ import "./NavBar.scss";
 function NavBar() {
 	return (
 		<nav className="navBar">
-			<div className="container">
-				<div className="logo">
-					<NavLink to="under_construction">
-						<img className="logoSmall" src={logoSmall} alt="logo" />
-					</NavLink>
-				</div>
+			<div className="logo">
+				<NavLink to="under_construction">
+					<img className="logoSmall" src={logoSmall} alt="logo" />
+				</NavLink>
 			</div>
 		</nav>
 	);
