@@ -9,7 +9,7 @@ function NavBar() {
 		<nav className="navBar">
 			<div className="container">
 				<div className="logo">
-					<NavLink to="/">
+					<NavLink to="under_construction">
 						<img className="logoSmall" src={logoSmall} alt="logo" />
 					</NavLink>
 				</div>
