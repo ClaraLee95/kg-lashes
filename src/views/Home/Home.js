@@ -1,17 +1,16 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import logoBigTransparentWhite from "../../assets/LogoBigTransparentWhite.png";
 
 import "./Home.scss";
 
 function Home() {
 	return (
-		<div>
-			<h1>Home</h1>
+		<div className="container">
 			<img
-				className=""
-				src={image}
+				className="logoBigTransparentWhite"
+				src={logoBigTransparentWhite}
 				alt=""
-				style={{ width: 1200, margin: "auto" }}
+				style={{ width: 500, margin: "auto" }}
 			/>
 		</div>
 	);
