@@ -26,14 +26,6 @@ function Footer() {
 						Impressum
 					</NavLink>
 				</div>
-				<div className="lineContainer">
-					<div className="line"></div>
-				</div>
-				<div className="footerItem">
-					<NavLink className="footerText" to="/kontakt">
-						Kontakt
-					</NavLink>
-				</div>
 			</div>
 		</div>
 	);

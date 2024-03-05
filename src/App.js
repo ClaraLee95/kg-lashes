@@ -4,6 +4,8 @@ import UnderConstruction from "./views/UnderConstruction/UnderConstruction";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Footer from "./components/Footer/Footer";
+import Impressum from "./views/Impressum/Impressum";
+import Datenschutz from "./views/Datenschutz/Datenschutz";
 
 const App = () => {
 	return (
@@ -15,13 +17,10 @@ const App = () => {
 						<Route
 							path="under_construction"
 							element={<UnderConstruction></UnderConstruction>}></Route>
-						<Route path="uber_mich"></Route>
-						<Route path="was_biete_ich"></Route>
-						<Route path="preisliste"></Route>
-						<Route path="gallerie"></Route>
-						<Route path="faqs"></Route>
-						<Route path="kontakt"></Route>
-						<Route path="datenschutz"></Route>
+						<Route path="impressum" element={<Impressum></Impressum>}></Route>
+						<Route
+							path="datenschutz"
+							element={<Datenschutz></Datenschutz>}></Route>
 					</Routes>
 				</div>
 				<Footer></Footer>

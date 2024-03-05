@@ -1,0 +1,49 @@
+@import "../../custom.scss";
+
+.impressumItemContainer {
+	padding: 1rem 0;
+	.impressumItemHeader {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+}
+
+.impressumContentsCompanyContainer,
+.impressumContentsContactContainer {
+	display: flex;
+	flex-direction: row;
+	.impressumItemContentName {
+		font-weight: 400;
+	}
+	.impressumItemContentText {
+	}
+}
+
+.impressumContentsLawsContainer {
+	display: flex;
+	flex-direction: column;
+	.impressumItemContentName {
+		font-weight: 400;
+	}
+	.impressumItemContentText {
+	}
+}
+
+@media (max-width: $tablet) {
+	.impressumItemContainer {
+		.impressumItemHeader {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+	.impressumItemContainer {
+		.impressumItemHeader {
+			font-size: 1rem;
+		}
+	}
+}
