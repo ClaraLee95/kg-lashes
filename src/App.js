@@ -15,7 +15,7 @@ const App = () => {
 				<div className="contentContainer">
 					<Routes>
 						<Route
-							path="under_construction"
+							path="/"
 							element={<UnderConstruction></UnderConstruction>}></Route>
 						<Route path="impressum" element={<Impressum></Impressum>}></Route>
 						<Route

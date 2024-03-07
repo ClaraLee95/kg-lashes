@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logoSmall from "../../assets/LogoSmallTransparent.png";
+import logoSmall from "../../assets/logo_small_black.png";
 
 import "./NavBar.scss";
 
@@ -8,8 +8,8 @@ function NavBar() {
 	return (
 		<nav className="navBar">
 			<div className="logo">
-				<NavLink to="under_construction">
-					<img className="logoSmall" src={logoSmall} alt="logo" />
+				<NavLink to="/">
+					<img className="logoSmall" src={logoSmall} alt="KG Aesthetic Lashes" />
 				</NavLink>
 			</div>
 		</nav>

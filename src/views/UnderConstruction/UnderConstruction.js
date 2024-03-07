@@ -1,6 +1,5 @@
 import React from "react";
-import logoBigTop from "../../assets/LogoBigTopTransparent.png";
-import logoBigBottom from "../../assets/LogoBigBottomTransparent.png";
+import logoBig from "../../assets/logo_big_black.png";
 import "./UnderConstruction.scss";
 
 import { FaPhone } from "react-icons/fa6";
@@ -13,8 +12,7 @@ function UnderConstruction() {
 			<div className="backgroundContainer">
 				<div className="infoContainer">
 					<div className="logoBigContainer">
-						<img className="logoTop" src={logoBigTop} alt="" />
-						<img className="logoBottom" src={logoBigBottom} alt="" />
+						<img className="logo" src={logoBig} alt="KG Aesthetic Lashes" />
 					</div>
 					<div className="verticalLineContainer">
 						<div className="verticalLine"></div>

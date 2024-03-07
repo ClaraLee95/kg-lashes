@@ -22,19 +22,14 @@
 }
 
 .logoBigContainer {
-	display: flex;
-	flex-direction: column;
-
 	margin: auto;
 	align-items: center;
 	text-align: center;
 
 	width: 45%;
 
-	.logoTop,
-	.logoBottom {
+	.logo {
 		margin: 0 auto;
-		opacity: 2;
 
 		width: 65%;
 		height: auto;
@@ -111,8 +106,7 @@
 	.logoBigContainer {
 		margin: 5rem auto;
 
-		.logoTop,
-		.logoBottom {
+		.logo {
 			width: 100%;
 			height: auto;
 		}
@@ -154,8 +148,7 @@
 	.logoBigContainer {
 		margin: 4rem auto;
 
-		.logoTop,
-		.logoBottom {
+		.logo {
 			min-width: 250px;
 		}
 	}
@@ -189,8 +182,7 @@
 		margin: 3rem auto;
 		width: 80%;
 
-		.logoTop,
-		.logoBottom {
+		.logo {
 			min-width: 150px;
 		}
 	}
