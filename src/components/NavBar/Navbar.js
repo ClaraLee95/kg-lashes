@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logoSmall from "../../assets/LogoSmallTransparent.png";
+import logoSmall from "../../assets/logo_small_black.png";
 
 import "./NavBar.scss";
 
@@ -9,7 +9,11 @@ function NavBar() {
 		<nav className="navBar">
 			<div className="logoContainer">
 				<NavLink to="/">
-					<img className="logoSmall" src={logoSmall} alt="logo" />
+					<img
+						className="logoSmall"
+						src={logoSmall}
+						alt="AG Aesthetic Lashes"
+					/>
 				</NavLink>
 			</div>
 			<div className="menuContainer">

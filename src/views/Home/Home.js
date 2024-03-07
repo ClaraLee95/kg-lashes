@@ -1,17 +1,21 @@
 import React from "react";
-import logoBigTransparentWhite from "../../assets/LogoBigTransparentWhite.png";
+import logoBigWhite from "../../assets/logo_big_white.png";
+import blobl from "../../assets/background_blob.gif";
 
 import "./Home.scss";
 
 function Home() {
 	return (
 		<div className="container">
-			<img
-				className="logoBigTransparentWhite"
-				src={logoBigTransparentWhite}
-				alt=""
-				style={{ width: 500, margin: "auto" }}
-			/>
+			<div className="logoBigWhiteContainer">
+				<img className="blob" src={blobl} alt="" />
+				<img
+					className="logoBigWhite"
+					src={logoBigWhite}
+					alt="AG Aesthetic Lashes"
+					style={{ width: 500, margin: "auto" }}
+				/>
+			</div>
 		</div>
 	);
 }

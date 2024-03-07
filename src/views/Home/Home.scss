@@ -1,14 +1,22 @@
 @import "../../custom.scss";
 
-.container {
-	background-image: url("../../assets/background_blob.gif");
-	background-repeat: no-repeat;
-	height: 100%;
+.logoBigWhiteContainer {
+	position: relative;
+	top: 0;
+	left: 0;
 
 	.blob {
-		margin: auto;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.logoBigWhite {
+		position: absolute;
+		top: 30px;
+		left: 30px;
 	}
 }
+
 @media (max-width: $tablet) {
 }
 
