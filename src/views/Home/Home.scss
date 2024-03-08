@@ -1,20 +1,9 @@
 @import "../../custom.scss";
 
-.logoBigWhiteContainer {
-	position: relative;
-	top: 0;
-	left: 0;
-
-	.blob {
-		position: relative;
-		top: 0;
-		left: 0;
-	}
-	.logoBigWhite {
-		position: absolute;
-		top: 30px;
-		left: 30px;
-	}
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10rem;
 }
 
 @media (max-width: $tablet) {

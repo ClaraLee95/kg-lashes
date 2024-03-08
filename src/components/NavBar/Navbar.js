@@ -4,9 +4,9 @@ import logoSmall from "../../assets/logo_small_black.png";
 
 import "./NavBar.scss";
 
-function NavBar() {
+function NavBar(props) {
 	return (
-		<nav className="navBar">
+		<nav className={"navBar " + props.className}>
 			<div className="logoContainer">
 				<NavLink to="/">
 					<img

@@ -28,8 +28,52 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	row-gap: 3rem;
 }
 
-.contentContainer {
+.container {
 	flex: 1;
+}
+
+// Shared Theme
+.backgroundLight {
+	background-color: $light !important;
+}
+
+.backgroundDark {
+	background-color: $green !important;
+}
+
+.fontLight {
+	color: white !important;
+
+	a {
+		color: white !important;
+	}
+}
+
+.fontDark {
+	color: $darkest !important;
+
+	a {
+		color: $darkest !important;
+	}
+}
+
+.fontBlack {
+	color: black;
+}
+
+.fontMenu {
+	font-family: $text_noto !important;
+	font-weight: 400;
+}
+
+.fontText {
+	font-family: $text_montserrat !important;
+}
+
+.fontFooter {
+	font-family: $text_noto !important;
+	font-weight: 600;
 }
