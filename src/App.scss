@@ -18,7 +18,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: $light !important;
+	background-color: $light;
 	width: 100vw;
 	height: 80vh;
 	z-index: 1;
@@ -37,26 +37,26 @@ body {
 
 // Shared Theme
 .backgroundLight {
-	background-color: $light !important;
+	background-color: $light;
 }
 
 .backgroundDark {
-	background-color: $green !important;
+	background-color: $green;
 }
 
 .fontLight {
-	color: white !important;
+	color: white;
 
 	a {
-		color: white !important;
+		color: white;
 	}
 }
 
 .fontDark {
-	color: $darkest !important;
+	color: $darkest;
 
 	a {
-		color: $darkest !important;
+		color: $darkest;
 	}
 }
 
@@ -65,15 +65,29 @@ body {
 }
 
 .fontMenu {
-	font-family: $text_noto !important;
+	font-family: $text_noto;
 	font-weight: 400;
 }
 
-.fontText {
-	font-family: $text_montserrat !important;
+.fontFooter {
+	font-family: $text_noto;
+	font-weight: 600;
 }
 
-.fontFooter {
-	font-family: $text_noto !important;
+.fontHeader {
+	font-family: $text_cormorant;
 	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.fontSubheader {
+	font-family: $text_cormorant;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.fontText {
+	font-family: $text_cormorant;
+	font-weight: 400;
+	font-size: 0.9rem;
 }

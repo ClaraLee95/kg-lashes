@@ -16,7 +16,6 @@ import Impressum from "./views/Impressum/Impressum";
 const App = () => {
 	let bodyClass = "backgroundLight fontDark";
 	const location = useLocation().pathname;
-	console.log(location);
 	if (location === "/was-biete-ich" || location === "/galerie") {
 		bodyClass = " backgroundDark fontLight";
 	}

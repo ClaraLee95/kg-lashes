@@ -1,0 +1,37 @@
+@import "../../custom.scss";
+
+.buttonCustom {
+	border: 1px solid $darkest;
+	background-color: $light;
+	padding: 5px;
+	width: fit-content;
+}
+
+.light {
+	color: $darkest;
+	font-weight: 500;
+}
+.light:hover {
+	cursor: pointer;
+	background-color: $darkest;
+	color: white;
+}
+
+.dark {
+	background-color: $darkest;
+	color: white;
+}
+.dark:hover {
+	cursor: pointer;
+	background-color: $light;
+	color: $darkest;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}
