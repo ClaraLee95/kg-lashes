@@ -19,8 +19,8 @@ function UnderConstruction() {
 					</div>
 					<div className="contactContainer">
 						<div className="underConstructionText">
-							Diese Website befindet sich derzeit im Aufbau. Bitte kontaktieren
-							Sie uns über:
+							Diese Website befindet sich derzeit im Aufbau. Bitte kontaktiere
+							mich über:
 						</div>
 						<div className="listContainer">
 							<div className="contactItem">
@@ -33,19 +33,6 @@ function UnderConstruction() {
 										target="_blank"
 										rel="noopener noreferrer">
 										0163 1320591
-									</a>
-								</div>
-							</div>
-							<div className="contactItem">
-								<div className="contactIcon">
-									<IoLocationSharp value={{ className: "contactIcon" }} />
-								</div>
-								<div className="contactText">
-									<a
-										href="https://maps.app.goo.gl/nrpRBojQKBVuDACt8"
-										target="_blank"
-										rel="noopener noreferrer">
-										85307 Paunzhausen
 									</a>
 								</div>
 							</div>
