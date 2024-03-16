@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import image from "@/assets/background.jpg";
 
-import "./AboutMe.scss";
+import "./Services.scss";
 
-function AboutMe() {
+function Services() {
 	return (
 		<div>
-			<h1>Uber Mich</h1>
+			<h1>Was Biete Ich</h1>
 			<img
 				className=""
 				src={image}
@@ -17,4 +17,4 @@ function AboutMe() {
 	);
 }
 
-export default AboutMe;
+export default Services;

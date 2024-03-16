@@ -1,12 +1,10 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import logoSmall from "../../assets/logo_small_black.png";
-
+import logoSmall from "@/assets/logo_small_black.png";
 import "./NavBar.scss";
 
-function NavBar(props) {
+function NavBar({ className }: { className: string }) {
 	return (
-		<nav className={"navBar " + props.className}>
+		<nav className={"navBar " + className}>
 			<div className="logoContainer">
 				<NavLink to="/">
 					<img

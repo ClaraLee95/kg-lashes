@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import image from "@/assets/background.jpg";
 
-import "./FAQs.scss";
+import "./DataProtection.scss";
 
-function FAQs() {
+function DataProtection() {
 	return (
 		<div>
-			<h1>FAQs</h1>
+			<h1>Datenschutz</h1>
 			<img
 				className=""
 				src={image}
@@ -17,4 +17,4 @@ function FAQs() {
 	);
 }
 
-export default FAQs;
+export default DataProtection;

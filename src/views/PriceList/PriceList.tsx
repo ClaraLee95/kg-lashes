@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import image from "@/assets/background.jpg";
 
-import "./Contact.scss";
+import "./PriceList.scss";
 
-function Contact() {
+function PriceList() {
 	return (
 		<div>
-			<h1>Contact</h1>
+			<h1>Price List</h1>
 			<img
 				className=""
 				src={image}
@@ -17,4 +17,4 @@ function Contact() {
 	);
 }
 
-export default Contact;
+export default PriceList;

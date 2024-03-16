@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import image from "@/assets/background.jpg";
 
-import "./Gallery.scss";
+import "./FAQs.scss";
 
-function Gallery() {
+function FAQs() {
 	return (
 		<div>
-			<h1>Gallery</h1>
+			<h1>FAQs</h1>
 			<img
 				className=""
 				src={image}
@@ -17,4 +17,4 @@ function Gallery() {
 	);
 }
 
-export default Gallery;
+export default FAQs;

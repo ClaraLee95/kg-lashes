@@ -1,6 +1,6 @@
 import React from "react";
-import logoBigWhite from "../../../assets/logo_big_white.png";
-import blob from "../../../assets/background_blob.gif";
+import logoBigWhite from "@/assets/logo_big_white.png";
+import blob from "@/assets/background_blob.gif";
 import "./HomeLogo.scss";
 
 function HomeLogo() {

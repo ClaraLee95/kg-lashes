@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 
-function Footer(props) {
+function Footer({ className }: { className: string }) {
 	const year = new Date().getFullYear();
 	return (
-		<div className={"footerContainer " + props.className}>
+		<div className={"footerContainer " + className}>
 			<div className="footerRow">
 				<div className="footerItem">
 					<div className="footerText">&copy;{year} KG Aesthetic Lashes</div>

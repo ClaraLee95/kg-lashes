@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import image from "@/assets/background.jpg";
 
-import "./DataProtection.scss";
+import "./AboutMe.scss";
 
-function DataProtection() {
+function AboutMe() {
 	return (
 		<div>
-			<h1>Datenschutz</h1>
+			<h1>Uber Mich</h1>
 			<img
 				className=""
 				src={image}
@@ -17,4 +17,4 @@ function DataProtection() {
 	);
 }
 
-export default DataProtection;
+export default AboutMe;
