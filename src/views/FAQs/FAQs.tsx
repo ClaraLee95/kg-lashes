@@ -1,5 +1,5 @@
 import React from "react";
-import image from "@/assets/background.jpg";
+import image from "../../assets/background.jpg";
 
 import "./FAQs.scss";
 

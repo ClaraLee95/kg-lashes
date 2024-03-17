@@ -2,23 +2,7 @@ import React from "react";
 import "./Card.scss";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
-
-type ImageProps = {
-	location: string;
-	src: string;
-	alt: string;
-};
-
-type ContentProps = {
-	header: string;
-	text: string;
-	button: JSX.Element;
-};
-
-type CardProps = {
-	image: ImageProps;
-	content: ContentProps;
-};
+import { CardProps } from "../../lib/types";
 
 function Card({ image, content }: CardProps) {
 	const imgLocation = image.location === "left" ? "imageLeft" : "imageRight";

@@ -1,5 +1,6 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
-import logoSmall from "@/assets/logo_small_black.png";
+import logoSmall from "../../assets/logo_small_black.png";
 import "./NavBar.scss";
 
 function NavBar({ className }: { className: string }) {

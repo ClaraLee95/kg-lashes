@@ -1,8 +1,8 @@
 import React from "react";
 import "./HomeAboutMe.scss";
-import Card from "@/components/Card/Card";
-import profile from "@/assets/home_about_me_example.jpg";
-import Button from "@/components/Button/Button";
+import Card from "../../../components/Card/Card";
+import profile from "../../../assets/home_about_me_example.jpg";
+import Button from "../../../components/Button/Button";
 
 function HomeAboutMe() {
 	const button = <Button theme="light" text="Mehr"></Button>;
