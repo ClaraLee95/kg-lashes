@@ -16,12 +16,26 @@
 		font-family: $text_noto;
 		font-size: 5rem;
 	}
+}
 
-	.datenschutzText {
-		margin: auto;
-		padding: 5rem;
-		padding-top: 2rem;
-		font-family: $text_montserrat;
+.datenschutzText {
+	margin: auto;
+	padding: 5rem;
+	padding-top: 2rem;
+	font-family: $text_montserrat;
+
+	.datenschutzTextContainer {
+		margin-bottom: 4rem;
+	}
+
+	.datenschutzTextHeader {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.datenschutzTextSubheader {
+		font-size: 1rem;
+		font-weight: 500;
 	}
 }
 

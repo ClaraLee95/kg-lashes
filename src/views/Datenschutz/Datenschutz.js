@@ -7,67 +7,116 @@ function Datenschutz() {
 			<div className="datenschutzContainer">
 				<div className="datenschutzHeader">Datenschutzerklärung</div>
 				<div className="datenschutzText">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
-					maecenas pharetra convallis posuere morbi leo. Morbi tristique
-					senectus et netus et malesuada fames. Mattis pellentesque id nibh
-					tortor id. At risus viverra adipiscing at in tellus. Odio facilisis
-					mauris sit amet massa vitae tortor condimentum lacinia. Suscipit
-					tellus mauris a diam maecenas sed enim ut. Dictum sit amet justo donec
-					enim diam. Nisl tincidunt eget nullam non. Id leo in vitae turpis
-					massa sed. In dictum non consectetur a erat nam. Odio euismod lacinia
-					at quis risus. Ullamcorper velit sed ullamcorper morbi tincidunt
-					ornare massa eget. Sagittis eu volutpat odio facilisis mauris. Nisi
-					est sit amet facilisis magna etiam tempor orci eu. Penatibus et magnis
-					dis parturient montes. Risus sed vulputate odio ut enim blandit
-					volutpat. A iaculis at erat pellentesque adipiscing commodo elit at
-					imperdiet. Hac habitasse platea dictumst quisque.
-					<br /><br />
-					Mauris pharetra et ultrices neque ornare aenean euismod elementum
-					nisi. At elementum eu facilisis sed. Eu ultrices vitae auctor eu
-					augue. Sed odio morbi quis commodo odio aenean sed adipiscing diam.
-					Diam maecenas ultricies mi eget mauris pharetra et ultrices. Bibendum
-					at varius vel pharetra vel turpis nunc eget lorem. Sed adipiscing diam
-					donec adipiscing tristique. Lectus sit amet est placerat in egestas.
-					Feugiat vivamus at augue eget arcu. Fermentum dui faucibus in ornare
-					quam viverra orci sagittis. Fames ac turpis egestas maecenas pharetra
-					convallis posuere morbi. Ac tincidunt vitae semper quis lectus nulla
-					at volutpat diam. Velit sed ullamcorper morbi tincidunt ornare. Amet
-					nisl purus in mollis nunc sed. At quis risus sed vulputate. Semper
-					viverra nam libero justo laoreet sit amet. Est pellentesque elit
-					ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
-					<br /><br />
-					Sed sed risuspretium quam vulputate dignissim suspendisse in est.
-					Vitae elementum curabitur vitae nunc sed. Viverra justo nec ultrices
-					dui. Nisl vel pretium lectus quam id leo in. Felis donec et odio
-					pellentesque diam volutpat commodo sed egestas. Congue mauris rhoncus
-					aenean vel elit scelerisque mauris pellentesque pulvinar. Nullam
-					vehicula ipsum a arcu cursus vitae. Habitant morbi tristique senectus
-					et netus et malesuada. Orci eu lobortis elementum nibh tellus
-					molestie. Aliquet enim tortor at auctor urna. Enim lobortis
-					scelerisque fermentum dui faucibus in ornare. Tempus urna et pharetra
-					pharetra massa massa ultricies mi. Sit amet nisl suscipit adipiscing
-					bibendum est ultricies integer quis. Et malesuada fames ac turpis
-					egestas sed tempus. Viverra tellus in hac habitasse platea. Maecenas
-					ultricies mi eget mauris pharetra et ultrices. Eu consequat ac felis
-					donec et odio. Orci dapibus ultrices in iaculis nunc sed augue. Nunc
-					sed augue lacus viverra vitae congue eu consequat. Cursus sit amet
-					dictum sit amet. Lorem ipsum dolor sit amet. Eget nunc scelerisque
-					viverra mauris in aliquam sem. Aliquet risus feugiat in ante metus
-					dictum at tempor commodo. Posuere lorem ipsum dolor sit amet
-					consectetur adipiscing. In aliquam sem fringilla ut morbi tincidunt
-					augue interdum velit. Tempus imperdiet nulla malesuada pellentesque
-					elit eget gravida cum sociis. Nullam non nisi est sit amet. Aliquam
-					malesuada bibendum arcu vitae elementum. Vitae tortor condimentum
-					lacinia quis. Sit amet consectetur adipiscing elit duis tristique
-					sollicitudin nibh. Imperdiet dui accumsan sit amet nulla facilisi
-					morbi. Sit amet purus gravida quis blandit turpis cursus. Pharetra
-					pharetra massa massa ultricies mi quis hendrerit. Laoreet suspendisse
-					interdum consectetur libero id faucibus nisl tincidunt. Proin nibh
-					nisl condimentum id venenatis.
-					<br /><br />
-					Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt
-					vitae. Id aliquet lectus proin nibh nisl condimentum.
+					<div className="datenschutzTextContainer">
+						<div className="datenschutzTextHeader">
+							Datenschutzerklärung für die Homepage:
+						</div>
+						Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz
+						Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend informieren
+						wir Sie ausführlich über den Umgang mit Ihren Daten.
+						<br />
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">
+								1. Erhebung, Verarbeitung und Nutzung personenbezogener Daten
+							</div>
+							Wenn Sie unsere Website besuchen, erheben wir keine
+							personenbezogenen Daten von Ihnen, es sei denn, Sie stellen diese
+							Daten freiwillig zur Verfügung, z.B. durch das Ausfüllen von
+							Kontaktformularen oder das Versenden von E-Mails. Wir verwenden
+							diese Daten ausschließlich zur Bearbeitung Ihrer Anfrage und geben
+							sie nicht ohne Ihre Einwilligung weiter.
+						</div>
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">2. Cookies</div>
+							Unsere Website verwendet keine Cookies.
+						</div>
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">
+								3. Datensicherheit{" "}
+							</div>
+							Wir treffen technische und organisatorische Sicherheitsmaßnahmen,
+							um Ihre Daten vor unbefugtem Zugriff, Verlust oder Zerstörung zu
+							schützen. Unsere Sicherheitsmaßnahmen werden regelmäßig überprüft
+							und entsprechend der technologischen Entwicklung angepasst.
+						</div>
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">
+								4. Auskunftsrecht und Kontaktmöglichkeit
+							</div>
+							Sie haben das Recht, jederzeit Auskunft über die von uns über Sie
+							gespeicherten personenbezogenen Daten zu erhalten. Bei Fragen zur
+							Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten,
+							bei Auskünften, Berichtigung, Sperrung oder Löschung von Daten
+							sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen
+							eine bestimmte Datenverwendung wenden Sie sich bitte an uns unter
+							den folgenden Kontaktdaten:
+							<br />
+							<br />
+							Katharina Gleixner <br />
+							KG Aesthetic Lashes <br />
+							85307 Paunzhausen <br />
+							E-Mail: info@kg-lashes.de
+						</div>
+						<br />
+					</div>
+					<div className="datenschutzTextContainer">
+						<div className="datenschutzTextHeader">
+							Datenschutzerklärung für Instagram:
+						</div>
+						Wir freuen uns über Ihr Interesse an unserem Instagram-Account. Der
+						Schutz Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend
+						informieren wir Sie ausführlich über den Umgang mit Ihren Daten.
+						<div>
+							<div className="datenschutzTextSubheader">
+								1. Erhebung, Verarbeitung und Nutzung personenbezogener Daten
+							</div>
+							Wenn Sie unseren Instagram-Account besuchen oder mit uns
+							interagieren (z.B. durch Likes, Kommentare oder Nachrichten),
+							können personenbezogene Daten erhoben und verarbeitet werden. Wir
+							verwenden diese Daten ausschließlich für die Zwecke der
+							Interaktion auf Instagram und geben sie nicht ohne Ihre
+							Einwilligung weiter.
+						</div>
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">2. Cookies </div>
+							Unser Instagram-Account verwendet möglicherweise Cookies, um die
+							Benutzererfahrung zu verbessern. Nähere Informationen hierzu
+							finden Sie in den Datenschutzrichtlinien von Instagram.
+						</div>
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">3. Datensicherheit</div>
+							Wir treffen technische und organisatorische Sicherheitsmaßnahmen,
+							um Ihre Daten vor unbefugtem Zugriff, Verlust oder Zerstörung zu
+							schützen. Unsere Sicherheitsmaßnahmen werden regelmäßig überprüft
+							und entsprechend der technologischen Entwicklung angepasst.
+						</div>
+						<br />
+						<div>
+							<div className="datenschutzTextSubheader">
+								4. Auskunftsrecht und Kontaktmöglichkeit
+							</div>
+							Sie haben das Recht, jederzeit Auskunft über die von uns über Sie
+							gespeicherten personenbezogenen Daten zu erhalten. Bei Fragen zur
+							Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten,
+							bei Auskünften, Berichtigung, Sperrung oder Löschung von Daten
+							sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen
+							eine bestimmte Datenverwendung wenden Sie sich bitte an uns unter
+							den folgenden Kontaktdaten:
+							<br />
+							<br />
+							Katharina Gleixner <br />
+							KG Aesthetic Lashes <br />
+							85307 Paunzhausen <br />
+							E-Mail: info@kg-lashes.de
+						</div>
+						<br />
+					</div>
 				</div>
 			</div>
 		</div>

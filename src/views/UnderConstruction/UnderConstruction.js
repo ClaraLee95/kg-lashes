@@ -1,10 +1,9 @@
 import React from "react";
-import logoBig from "../../assets/logo_big_black.png";
+import logoBig from "../../assets/logo_big_black_shadow.png";
 import "./UnderConstruction.scss";
 
 import { FaPhone } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
-import { IoLocationSharp } from "react-icons/io5";
 
 function UnderConstruction() {
 	return (
