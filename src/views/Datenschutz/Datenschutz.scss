@@ -41,7 +41,7 @@
 
 @media (max-width: $tablet) {
 	.datenschutzContainer {
-		width: 80vw;
+		width: 90vw;
 
 		.datenschutzHeader {
 			font-size: 3rem;
@@ -50,6 +50,14 @@
 		.datenschutzText {
 			padding: 3rem;
 			padding-top: 2rem;
+
+			.datenschutzTextHeader {
+				font-size: 1.3rem;
+			}
+
+			.datenschutzTextSubheader {
+				font-size: 1rem;
+			}
 		}
 	}
 }
@@ -82,6 +90,14 @@
 			padding: 1rem;
 			padding-top: 0.5rem;
 			font-size: 0.8rem;
+
+			.datenschutzTextHeader {
+				font-size: 1.1rem;
+			}
+
+			.datenschutzTextSubheader {
+				font-size: 0.8rem;
+			}
 		}
 	}
 }

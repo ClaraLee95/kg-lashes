@@ -29,6 +29,7 @@ body {
 	width: calc(100vw - 20px);
 	height: calc(80vh - 20px);
 	z-index: 1;
+	white-space: initial;
 }
 
 .pageContainer {
@@ -39,4 +40,16 @@ body {
 
 .contentContainer {
 	flex: 1;
+}
+
+@media (max-width: $tablet) {
+	body {
+		width: 100vw;
+		height: 80vh;
+	}
+}
+
+@media (max-width: $small-tablet) {
+}
+@media (max-width: $phone) {
 }

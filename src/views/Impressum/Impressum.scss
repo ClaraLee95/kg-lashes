@@ -41,7 +41,7 @@
 
 @media (max-width: $tablet) {
 	.impressumContainer {
-		width: 80vw;
+		width: 90vw;
 
 		.impressumHeader {
 			font-size: 3rem;
@@ -50,6 +50,14 @@
 		.impressumText {
 			padding: 3rem;
 			padding-top: 2rem;
+
+			.impressumTextHeader {
+				font-size: 1.3rem;
+			}
+
+			.impressumTextSubheader {
+				font-size: 1rem;
+			}
 		}
 	}
 }
@@ -82,6 +90,14 @@
 			padding: 1rem;
 			padding-top: 0.5rem;
 			font-size: 0.8rem;
+
+			.impressumTextHeader {
+				font-size: 1.1rem;
+			}
+
+			.impressumTextSubheader {
+				font-size: 0.8rem;
+			}
 		}
 	}
 }

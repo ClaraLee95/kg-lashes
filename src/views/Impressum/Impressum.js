@@ -246,7 +246,7 @@ function Impressum() {
 								href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
 								rel="noopener noreferrer"
 								target="_blank">
-								https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
+								https://www.bfdi.bund.de
 							</a>
 							.
 						</div>
