@@ -16,6 +16,7 @@ function NavBar({ className }: { className: string }) {
 				</NavLink>
 			</div>
 			<div className="menuContainer">
+				<NavLink to="/">Home</NavLink>
 				<NavLink to="uber-mich">Über Mich</NavLink>
 				<NavLink to="was-biete-ich">Was Biete Ich</NavLink>
 				<NavLink to="preisliste">Preisliste</NavLink>

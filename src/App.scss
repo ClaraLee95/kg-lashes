@@ -24,12 +24,16 @@ body {
 	padding: 0;
 	background-color: $light;
 	scrollbar-gutter: stable;
-	width: 100vw;
-	height: 80vh;
-	width: calc(100vw - 20px);
+	// width: calc(100vw - 20px);
+
+	width: 100%;
+	max-width: 100vw;
+	box-sizing: border-box;
+
 	height: calc(80vh - 20px);
 	z-index: 1;
 	// scrollbar-gutter: stable both-edges;
+	white-space: initial;
 }
 
 .pageContainer {
@@ -38,7 +42,6 @@ body {
 	min-height: 100vh;
 	row-gap: 3rem;
 	position: relative;
-	// width: calc(100vw - 20px);
 }
 
 .container {
@@ -126,4 +129,17 @@ body {
 	font-family: $text_cormorant;
 	font-weight: 400;
 	font-size: 0.9rem;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: $tablet) {
+	body {
+		width: 100vw;
+		height: 80vh;
+	}
+}
+
+@media (max-width: $small-tablet) {
+}
+@media (max-width: $phone) {
 }

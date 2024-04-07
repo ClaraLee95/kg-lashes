@@ -17,34 +17,34 @@
 
 	width: 50%;
 
-	.cardExtraContainer {
-		display: flex;
-		margin: auto;
-		justify-content: space-between;
-
-		width: 80%;
-
-		.cardExtraQuoteLeft {
-			margin-top: -1.5rem;
-			margin-right: -2rem;
-			z-index: 1;
-		}
-
-		.cardExtraQuoteText {
-			width: 20vw;
-			text-align: center;
-			z-index: 2;
-		}
-
-		.cardExtraQuoteRight {
-			margin-top: 4rem;
-			margin-left: -4rem;
-			z-index: 1;
-		}
-	}
-
 	.cardContentText {
 		padding-bottom: 1rem;
+	}
+}
+
+.cardExtraContainer {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+
+	width: 80%;
+
+	.cardExtraQuoteLeft {
+		margin-top: -1.5rem;
+		margin-right: -2rem;
+		z-index: 1;
+	}
+
+	.cardExtraQuoteText {
+		width: 20vw;
+		text-align: center;
+		z-index: 2;
+	}
+
+	.cardExtraQuoteRight {
+		margin-top: 4rem;
+		margin-left: -4rem;
+		z-index: 1;
 	}
 }
 

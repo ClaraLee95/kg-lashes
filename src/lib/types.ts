@@ -13,6 +13,7 @@ export type ContentProps = {
 	header: string;
 	text: string;
 	button: JSX.Element;
+	extra: JSX.Element | null;
 };
 
 export type CardProps = {

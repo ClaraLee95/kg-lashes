@@ -1,10 +1,103 @@
 @import "../../custom.scss";
 
+.datenschutzContainer {
+	margin: 5% auto;
+	padding: 2rem;
+	background-color: rgba($light, 0.5);
+
+	width: 70vw;
+	height: 100%;
+	max-width: 1300px;
+
+	.datenschutzHeader {
+		margin: auto;
+		padding: 3rem;
+		text-align: center;
+		font-family: $text_noto;
+		font-size: 5rem;
+	}
+}
+
+.datenschutzText {
+	margin: auto;
+	padding: 5rem;
+	padding-top: 2rem;
+	font-family: $text_montserrat;
+
+	.datenschutzTextContainer {
+		margin-bottom: 4rem;
+	}
+
+	.datenschutzTextHeader {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.datenschutzTextSubheader {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+}
+
 @media (max-width: $tablet) {
+	.datenschutzContainer {
+		width: 90vw;
+
+		.datenschutzHeader {
+			font-size: 3rem;
+		}
+
+		.datenschutzText {
+			padding: 3rem;
+			padding-top: 2rem;
+
+			.datenschutzTextHeader {
+				font-size: 1.3rem;
+			}
+
+			.datenschutzTextSubheader {
+				font-size: 1rem;
+			}
+		}
+	}
 }
 
 @media (max-width: $small-tablet) {
+	.datenschutzContainer {
+		width: 95vw;
+
+		.datenschutzHeader {
+			font-size: 2.3rem;
+		}
+
+		.datenschutzText {
+			padding: 2rem;
+			padding-top: 1rem;
+		}
+	}
 }
 
 @media (max-width: $phone) {
+	.datenschutzContainer {
+		width: 95vw;
+
+		.datenschutzHeader {
+			font-size: 1.4rem;
+			padding: 1rem;
+		}
+
+		.datenschutzText {
+			padding: 1rem;
+			padding-top: 0.5rem;
+			font-size: 0.8rem;
+
+			.datenschutzTextHeader {
+				font-size: 1.1rem;
+			}
+
+			.datenschutzTextSubheader {
+				font-size: 0.8rem;
+			}
+		}
+	}
 }
