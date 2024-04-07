@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 import "./Footer.scss";
+import Line from "../../components/Line/Line";
 
 function Footer({ className }: { className: string }) {
 	const year = new Date().getFullYear();
@@ -10,25 +12,19 @@ function Footer({ className }: { className: string }) {
 				<div className="footerItem">
 					<div className="footerText">&copy;{year} KG Aesthetic Lashes</div>
 				</div>
-				<div className="lineContainer">
-					<div className="line"></div>
-				</div>
+				<Line theme="dark"></Line>
 				<div className="footerItem">
 					<NavLink className="footerText" to="/datenschutz">
 						Datenschutzerklärung
 					</NavLink>
 				</div>
-				<div className="lineContainer">
-					<div className="line"></div>
-				</div>
+				<Line theme="dark"></Line>
 				<div className="footerItem">
 					<NavLink className="footerText" to="/impressum">
 						Impressum
 					</NavLink>
 				</div>
-				<div className="lineContainer">
-					<div className="line"></div>
-				</div>
+				<Line theme="dark"></Line>
 				<div className="footerItem">
 					<NavLink className="footerText" to="/kontakt">
 						Kontakt
