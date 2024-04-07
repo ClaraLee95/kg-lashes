@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeFAQs.scss";
 import FaqCard from "../../../components/Card/FaqCard/FaqCard";
+import SectionHeader from "../../../components/SectionHeader/SectionHeader";
 
 function HomeFAQs() {
 	const items = [
@@ -31,12 +32,11 @@ function HomeFAQs() {
 
 	return (
 		<div className="homeFaqsContainer fontLight">
-			<div className="homeFaqsCardContainer container">
-				<div>
-					<div>FAQs</div>
-					<div className="verticalLine"></div>
+			<div className="container">
+				<div className="homeFaqsSectionHeader">
+					<SectionHeader header="FAQs" theme="light"></SectionHeader>
 				</div>
-				{renderFaqs}
+				<div className="homeFaqsCardContainer">{renderFaqs}</div>
 			</div>
 		</div>
 	);

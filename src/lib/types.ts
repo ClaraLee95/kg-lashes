@@ -24,3 +24,8 @@ export type HomeCardProps = {
 export type FaqCardProps = {
 	content: ContentProps;
 };
+
+export type LineProps = {
+	direction: string;
+	theme: string;
+};

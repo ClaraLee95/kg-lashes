@@ -12,19 +12,19 @@ function Footer({ className }: { className: string }) {
 				<div className="footerItem">
 					<div className="footerText">&copy;{year} KG Aesthetic Lashes</div>
 				</div>
-				<Line theme="dark"></Line>
+				<Line direction="vertical" theme="dark"></Line>
 				<div className="footerItem">
 					<NavLink className="footerText" to="/datenschutz">
 						Datenschutzerklärung
 					</NavLink>
 				</div>
-				<Line theme="dark"></Line>
+				<Line direction="vertical" theme="dark"></Line>
 				<div className="footerItem">
 					<NavLink className="footerText" to="/impressum">
 						Impressum
 					</NavLink>
 				</div>
-				<Line theme="dark"></Line>
+				<Line direction="vertical" theme="dark"></Line>
 				<div className="footerItem">
 					<NavLink className="footerText" to="/kontakt">
 						Kontakt

@@ -1,10 +1,11 @@
 import React from "react";
 import "./Line.scss";
+import { LineProps } from "../../lib/types";
 
-function Line({ theme }: { theme: string }) {
+function Line({ direction, theme }: LineProps) {
 	return (
-		<div className="lineContainer">
-			<div className={"line " + theme}></div>
+		<div className={"lineContainer " + direction}>
+			<div className={"line " + direction + " " + theme}></div>
 		</div>
 	);
 }

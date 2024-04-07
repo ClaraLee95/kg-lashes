@@ -5,10 +5,23 @@
 	margin: auto;
 	text-align: center;
 	vertical-align: middle;
-	width: 100%;
+
+	&.vertical {
+	}
+
+	&.horizontal {
+		width: 100%;
+	}
 
 	.line {
-		height: 1.8px;
+		&.vertical {
+			width: 1.5px;
+			height: 15px;
+		}
+
+		&.horizontal {
+			height: 1.8px;
+		}
 
 		&.light {
 			background-color: $light;
@@ -16,10 +29,6 @@
 
 		&.dark {
 			background-color: black;
-		}
-
-		&.short {
-			width: 50%;
 		}
 	}
 }

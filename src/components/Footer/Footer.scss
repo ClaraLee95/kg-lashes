@@ -22,19 +22,6 @@
 	display: flex;
 	flex-direction: row;
 
-	.lineContainer {
-		padding: 5px;
-		margin: auto;
-		text-align: center;
-
-		.line {
-			background-color: $light;
-
-			width: 1.5px;
-			height: 15px;
-		}
-	}
-
 	.footerItem {
 		margin: auto;
 		padding: 0 0.5rem;
@@ -66,15 +53,6 @@
 @media (max-width: $phone) {
 	.footerRow {
 		flex-direction: column;
-
-		.lineContainer {
-			padding: 0.2rem;
-
-			.line {
-				width: 20px;
-				height: 1.5px;
-			}
-		}
 
 		.footerItem {
 			.footerText {
