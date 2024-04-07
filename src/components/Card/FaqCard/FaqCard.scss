@@ -1,0 +1,23 @@
+@import "../../../custom.scss";
+
+.faqCardContentContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem;
+
+	width: 25%;
+
+	.faqCardContentText {
+		padding-bottom: 1rem;
+	}
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

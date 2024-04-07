@@ -12,11 +12,15 @@ export type ImageProps = {
 export type ContentProps = {
 	header: string;
 	text: string;
-	button: JSX.Element;
-	extra: JSX.Element | null;
+	button: ButtonProps;
+	extra?: JSX.Element | null;
 };
 
-export type CardProps = {
+export type HomeCardProps = {
 	image: ImageProps;
+	content: ContentProps;
+};
+
+export type FaqCardProps = {
 	content: ContentProps;
 };

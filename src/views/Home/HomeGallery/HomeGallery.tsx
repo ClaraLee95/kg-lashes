@@ -4,7 +4,7 @@ import "./HomeGallery.scss";
 function HomeGallery() {
 	return (
 		<>
-			<div className="galleryContainer"></div>
+			<div className="homeGalleryContainer"></div>
 		</>
 	);
 }

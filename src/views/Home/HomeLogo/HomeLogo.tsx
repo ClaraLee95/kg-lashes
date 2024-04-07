@@ -5,22 +5,20 @@ import "./HomeLogo.scss";
 
 function HomeLogo() {
 	return (
-		<>
-			<div className="logoBigWhiteContainer">
-				<img
-					className="blob"
-					src={blob}
-					alt=""
-					style={{ width: 500, margin: "auto" }}
-				/>
-				<img
-					className="logoBigWhite"
-					src={logoBigWhite}
-					alt="AG Aesthetic Lashes"
-					style={{ width: 350, margin: "auto" }}
-				/>
-			</div>
-		</>
+		<div className="homeLogoContainer">
+			<img
+				className="blob"
+				src={blob}
+				alt=""
+				style={{ width: 500, margin: "auto" }}
+			/>
+			<img
+				className="logoBigWhite"
+				src={logoBigWhite}
+				alt="AG Aesthetic Lashes"
+				style={{ width: 350, margin: "auto" }}
+			/>
+		</div>
 	);
 }
 
