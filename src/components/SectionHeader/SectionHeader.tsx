@@ -6,7 +6,7 @@ function SectionHeader({ header, theme }: { header: string; theme: string }) {
 	return (
 		<div className="sectionHeaderContainer">
 			<div className={"sectionHeader fontHeader " + theme}>{header}</div>
-			<Line direction="horizontal" theme="light"></Line>
+			<Line direction="horizontal" theme={theme}></Line>
 		</div>
 	);
 }
