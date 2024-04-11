@@ -22,6 +22,7 @@ function HomeFAQs() {
 	const renderFaqs = items.map((item, index) => {
 		return (
 			<FaqCard
+				key={"faq_card_" + item.header}
 				content={{
 					header: item.header,
 					text: item.text,

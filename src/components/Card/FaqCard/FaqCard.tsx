@@ -1,7 +1,8 @@
 import React from "react";
-import "./FaqCard.scss";
+import { NavLink } from "react-router-dom";
 import { FaqCardProps } from "../../../lib/types";
 import Button from "../../../components/Button/Button";
+import "./FaqCard.scss";
 
 function FaqCard({ content }: FaqCardProps) {
 	return (
@@ -9,9 +10,11 @@ function FaqCard({ content }: FaqCardProps) {
 			<div className="faqCardContentHeader fontSubheader">{content.header}</div>
 			<div className="faqCardContentText">{content.text}</div>
 			<div>
-				<Button
-					theme={content.button.theme}
-					text={content.button.text}></Button>
+				<NavLink to="faqs">
+					<Button
+						theme={content.button.theme}
+						text={content.button.text}></Button>
+				</NavLink>
 			</div>
 		</div>
 	);

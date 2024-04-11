@@ -1,9 +1,9 @@
 import React from "react";
-import "./HomeAboutMe.scss";
-import HomeCard from "../../../components/Card/HomeCard/HomeCard";
-import profile from "../../../assets/home_about_me_example.jpg";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
+import HomeCard from "../../../components/Card/HomeCard/HomeCard";
+import profile from "../../../assets/home_about_me_example.jpg";
+import "./HomeAboutMe.scss";
 
 function HomeAboutMe() {
 	const aboutMeHeader = "Über Mich",
@@ -39,7 +39,8 @@ function HomeAboutMe() {
 					text: aboutMeText,
 					button: { theme: "light", text: "Mehr" },
 					extra: extra,
-				}}></HomeCard>
+				}}
+				nav="uber-mich"></HomeCard>
 		</div>
 	);
 }

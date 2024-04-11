@@ -1,10 +1,11 @@
 import React from "react";
-import "./HomeCard.scss";
+import { NavLink } from "react-router-dom";
 import { HomeCardProps } from "../../../lib/types";
 import Button from "../../../components/Button/Button";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
+import "./HomeCard.scss";
 
-function HomeCard({ image, content }: HomeCardProps) {
+function HomeCard({ image, content, nav }: HomeCardProps) {
 	const imgLocation = image.location === "left" ? "imageLeft" : "imageRight";
 	return (
 		<div className={imgLocation}>
@@ -21,9 +22,11 @@ function HomeCard({ image, content }: HomeCardProps) {
 					</div>
 					<div className="homeCardContentText">{content.text}</div>
 					<div>
-						<Button
-							theme={content.button.theme}
-							text={content.button.text}></Button>
+						<NavLink to={nav}>
+							<Button
+								theme={content.button.theme}
+								text={content.button.text}></Button>
+						</NavLink>
 					</div>
 				</div>
 			</div>

@@ -19,6 +19,7 @@ export type ContentProps = {
 export type HomeCardProps = {
 	image: ImageProps;
 	content: ContentProps;
+	nav: string;
 };
 
 export type FaqCardProps = {

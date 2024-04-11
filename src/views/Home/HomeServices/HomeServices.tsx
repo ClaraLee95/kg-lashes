@@ -21,7 +21,8 @@ function HomeServices() {
 					text: servicesText,
 					button: { theme: "light", text: "Mehr" },
 					extra: null,
-				}}></HomeCard>
+				}}
+				nav="was-biete-ich"></HomeCard>
 		</div>
 	);
 }
