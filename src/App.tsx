@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "./components/NavBar/Navbar";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.scss";
@@ -14,11 +14,28 @@ import DataProtection from "./views/DataProtection/DataProtection";
 import Impressum from "./views/Impressum/Impressum";
 
 const App = () => {
-	let bodyClass = "backgroundLight fontDark";
-	const location = useLocation().pathname;
-	if (location === "/was-biete-ich" || location === "/galerie") {
-		bodyClass = " backgroundDark fontLight";
-	}
+	const location = useLocation();
+	const [previousLocation, setPreviousLocation] = useState("");
+	const [currentLocation, setCurrentLocation] = useState("/");
+	const [bodyClass, setBodyClass] = useState("backgroundLight fontDark");
+
+	useEffect(() => {
+		setCurrentLocation(location.pathname);
+		if (
+			currentLocation === "/was-biete-ich" ||
+			currentLocation === "/galerie"
+		) {
+			setBodyClass("backgroundDark fontLight");
+		} else {
+			setBodyClass("backgroundLight fontDark");
+		}
+
+		if (currentLocation !== previousLocation) {
+			window.scrollTo(0, 0);
+			setPreviousLocation(currentLocation);
+		}
+	}, [location]);
+
 	return (
 		<div className={"pageContainer " + bodyClass}>
 			<NavBar className="fontMenu" />
