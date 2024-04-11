@@ -14,19 +14,28 @@ function Footer({ className }: { className: string }) {
 				</div>
 				<Line direction="vertical" theme="dark"></Line>
 				<div className="footerItem">
-					<NavLink className="footerText" to="/datenschutz">
+					<NavLink
+						className="footerText"
+						to="/datenschutz"
+						style={{ textDecoration: "none" }}>
 						Datenschutzerklärung
 					</NavLink>
 				</div>
 				<Line direction="vertical" theme="dark"></Line>
 				<div className="footerItem">
-					<NavLink className="footerText" to="/impressum">
+					<NavLink
+						className="footerText"
+						to="/impressum"
+						style={{ textDecoration: "none" }}>
 						Impressum
 					</NavLink>
 				</div>
 				<Line direction="vertical" theme="dark"></Line>
 				<div className="footerItem">
-					<NavLink className="footerText" to="/kontakt">
+					<NavLink
+						className="footerText"
+						to="/kontakt"
+						style={{ textDecoration: "none" }}>
 						Kontakt
 					</NavLink>
 				</div>

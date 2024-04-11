@@ -1,5 +1,46 @@
 @import "../../../custom.scss";
 
+.slider-container {
+	max-height: 350px !important;
+
+	&.slick-arrow {
+		width: 50px !important;
+	}
+}
+
+.slick-slide {
+	filter: blur(0.2rem);
+	img {
+		margin: auto;
+		width: auto;
+		height: 225px !important;
+	}
+
+	&.slick-center {
+		filter: blur(0);
+		img {
+			margin: auto;
+			width: auto;
+			height: 300px !important;
+			animation: imageGrow 0.2s;
+		}
+	}
+}
+
+.sliderImageContainer {
+	align-items: center;
+	vertical-align: middle;
+}
+
+@keyframes imageGrow {
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
 @media (max-width: $tablet) {
 }
 

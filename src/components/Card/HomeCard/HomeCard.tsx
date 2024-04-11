@@ -22,7 +22,7 @@ function HomeCard({ image, content, nav }: HomeCardProps) {
 					</div>
 					<div className="homeCardContentText">{content.text}</div>
 					<div>
-						<NavLink to={nav}>
+						<NavLink to={nav} style={{ textDecoration: "none" }}>
 							<Button
 								theme={content.button.theme}
 								text={content.button.text}></Button>

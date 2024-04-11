@@ -10,7 +10,7 @@ function FaqCard({ content }: FaqCardProps) {
 			<div className="faqCardContentHeader fontSubheader">{content.header}</div>
 			<div className="faqCardContentText">{content.text}</div>
 			<div>
-				<NavLink to="faqs">
+				<NavLink to="faqs" style={{ textDecoration: "none" }}>
 					<Button
 						theme={content.button.theme}
 						text={content.button.text}></Button>
