@@ -5,7 +5,7 @@ import "./AboutMe.scss";
 
 function AboutMe() {
 	return (
-		<div>
+		<div className="aboutMeContainer">
 			<h1>Uber Mich</h1>
 			<img
 				className=""

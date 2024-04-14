@@ -17,19 +17,22 @@ const App = () => {
 	const location = useLocation();
 	const [previousLocation, setPreviousLocation] = useState("");
 	const [currentLocation, setCurrentLocation] = useState("/");
-	const [bodyClass, setBodyClass] = useState("backgroundLight fontDark");
+	let bodyClass = "backgroundLight fontDark",
+		theme = "light";
+
+	if (
+		location.pathname === "/was-biete-ich" ||
+		location.pathname === "/galerie"
+	) {
+		bodyClass = "backgroundDark fontLight";
+		theme = "dark";
+	} else {
+		bodyClass = "backgroundLight fontDark";
+		theme = "light";
+	}
 
 	useEffect(() => {
 		setCurrentLocation(location.pathname);
-		if (
-			currentLocation === "/was-biete-ich" ||
-			currentLocation === "/galerie"
-		) {
-			setBodyClass("backgroundDark fontLight");
-		} else {
-			setBodyClass("backgroundLight fontDark");
-		}
-
 		if (currentLocation !== previousLocation) {
 			window.scrollTo(0, 0);
 			setPreviousLocation(currentLocation);
@@ -38,7 +41,7 @@ const App = () => {
 
 	return (
 		<div className={"pageContainer " + bodyClass}>
-			<NavBar className="fontMenu" />
+			<NavBar className="fontMenu" theme={theme} />
 			<div className="container">
 				<Routes>
 					<Route path="/" element={<Home></Home>}></Route>

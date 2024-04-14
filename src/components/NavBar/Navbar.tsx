@@ -1,16 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logoSmall from "../../assets/logo_small_black.png";
+import logoSmallBlack from "../../assets/logo_small_black.png";
+import logoSmallWhite from "../../assets/logo_small_white.png";
 import "./NavBar.scss";
 
-function NavBar({ className }: { className: string }) {
+function NavBar({ className, theme }: { className: string; theme: string }) {
 	return (
 		<nav className={"navBar " + className}>
 			<div className="logoContainer">
 				<NavLink to="/">
 					<img
 						className="logoSmall"
-						src={logoSmall}
+						src={theme === "light" ? logoSmallBlack : logoSmallWhite}
 						alt="AG Aesthetic Lashes"
 					/>
 				</NavLink>
