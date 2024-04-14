@@ -1,7 +1,12 @@
 @import "../../../custom.scss";
 
+.homeGalleryContainer {
+	margin: 3rem;
+}
+
 .slider-container {
 	max-height: 350px !important;
+	margin: 2rem;
 
 	&.slick-arrow {
 		width: 50px !important;
@@ -9,11 +14,12 @@
 }
 
 .slick-slide {
-	filter: blur(0.2rem);
+	filter: blur(0.3rem);
 	img {
 		margin: auto;
 		width: auto;
-		height: 225px !important;
+		max-width: 300;
+		max-height: 225px !important;
 	}
 
 	&.slick-center {
@@ -21,7 +27,8 @@
 		img {
 			margin: auto;
 			width: auto;
-			height: 300px !important;
+			max-width: auto;
+			height: 350px !important;
 			animation: imageGrow 0.2s;
 		}
 	}
