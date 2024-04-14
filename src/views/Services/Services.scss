@@ -1,5 +1,44 @@
 @import "../../custom.scss";
 
+.servicesContainer {
+	font-family: $text_libreBodoni;
+	font-optical-sizing: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: 5rem auto;
+}
+
+.servicesTop {
+	margin: 5rem auto;
+
+	.servicesTitle {
+		font-style: italic;
+		font-size: 8rem;
+	}
+
+	.servicesSubtitle {
+		font-size: 1.3rem;
+		width: 40%;
+		margin: auto;
+	}
+}
+
+.servicesImage {
+	margin: 9rem auto;
+
+	img {
+		width: 70%;
+	}
+}
+
+.servicesText {
+	width: 70%;
+	margin: auto;
+
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
 @media (max-width: $tablet) {
 }
 
