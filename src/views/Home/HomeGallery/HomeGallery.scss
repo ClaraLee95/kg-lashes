@@ -1,0 +1,58 @@
+@import "../../../custom.scss";
+
+.homeGalleryContainer {
+	margin: 3rem;
+}
+
+.slider-container {
+	max-height: 350px !important;
+	margin: 2rem;
+
+	&.slick-arrow {
+		width: 50px !important;
+	}
+}
+
+.slick-slide {
+	filter: blur(0.3rem);
+	img {
+		margin: auto;
+		width: auto;
+		max-width: 300;
+		max-height: 225px !important;
+	}
+
+	&.slick-center {
+		filter: blur(0);
+		img {
+			margin: auto;
+			width: auto;
+			max-width: auto;
+			height: 350px !important;
+			animation: imageGrow 0.2s;
+		}
+	}
+}
+
+.sliderImageContainer {
+	align-items: center;
+	vertical-align: middle;
+}
+
+@keyframes imageGrow {
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

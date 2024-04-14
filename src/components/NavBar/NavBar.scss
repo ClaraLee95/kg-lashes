@@ -1,0 +1,54 @@
+@import "../../custom.scss";
+
+.navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	padding: 1.5rem 3rem;
+	align-items: center;
+
+	// width: 100vw;
+	width: calc(100vw - 40px);
+	height: 100%;
+
+	.logoSmall {
+		width: 40px;
+	}
+}
+
+.menuContainer {
+	a {
+		margin: 1rem;
+	}
+
+	a.active {
+		font-weight: 700;
+	}
+}
+
+@media (max-width: $tablet) {
+	.navBar {
+		padding-top: 1.5rem;
+	}
+}
+
+@media (max-width: $small-tablet) {
+	.navBar {
+		padding-top: 1.3rem;
+
+		.logoSmall {
+			width: 35px;
+		}
+	}
+}
+
+@media (max-width: $phone) {
+	.navBar {
+		padding-left: 1.5rem;
+		.logoSmall {
+			width: 28px;
+		}
+	}
+}
