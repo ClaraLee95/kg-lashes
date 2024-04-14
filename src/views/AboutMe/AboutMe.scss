@@ -2,9 +2,8 @@
 
 .aboutMeHeaderContainer {
 	background-color: rgba($green, 0.5);
-	// background-color: rgba(#e9e8eb, 0.5);
 	width: 100vw;
-	margin-left: calc(-50vw + 50% - 5px);
+	margin-left: calc(-50vw + 50% - 6px);
 	position: relative;
 
 	padding: 2rem;
@@ -12,8 +11,9 @@
 
 	.aboutMeHeaderName {
 		position: absolute;
-		top: 25%;
+		top: 20%;
 		left: 30%;
+		font-size: 3rem;
 	}
 
 	img {
@@ -23,8 +23,9 @@
 }
 
 .aboutMeContentContainer {
-	margin: 10rem;
+	margin: 10rem 5rem;
 }
+
 @media (max-width: $tablet) {
 }
 

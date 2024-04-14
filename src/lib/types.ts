@@ -20,6 +20,13 @@ export type HomeCardProps = {
 	image: ImageProps;
 	content: ContentProps;
 	nav: string;
+	settings: HomeCardSettingProps;
+};
+
+export type HomeCardSettingProps = {
+	extraPlaced: boolean;
+	headerPlaced: boolean;
+	buttonPlaced: boolean;
 };
 
 export type FaqCardProps = {

@@ -15,9 +15,9 @@ function HomeAboutMe() {
 			<div className="homeCardExtraQuoteLeft">
 				<BiSolidQuoteAltLeft className="quoteSymbol" size="4rem" />
 			</div>
-			<div className="homeCardExtraQuoteText fontHeader">
-				Mein Ziel ist es, Deine Schonheit zu betonen,
-				<mark className="scrollHighlight">aspernatur voluptas numquam</mark>
+			<div className="homeCardExtraQuoteText fontSubheader">
+				Mein Ziel ist es,{" "}
+				<mark className="scrollHighlight">Deine Schonheit zu betonen,</mark>{" "}
 				damit Du dich in Deiner Haut wohl fülst.
 			</div>
 			<div className="homeCardExtraQuoteRight">
@@ -40,7 +40,12 @@ function HomeAboutMe() {
 					button: { theme: "light", text: "Mehr" },
 					extra: extra,
 				}}
-				nav="uber-mich"></HomeCard>
+				nav="uber-mich"
+				settings={{
+					extraPlaced: true,
+					headerPlaced: true,
+					buttonPlaced: true,
+				}}></HomeCard>
 		</div>
 	);
 }

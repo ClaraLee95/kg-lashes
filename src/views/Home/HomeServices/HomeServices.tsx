@@ -22,7 +22,12 @@ function HomeServices() {
 					button: { theme: "light", text: "Mehr" },
 					extra: null,
 				}}
-				nav="was-biete-ich"></HomeCard>
+				nav="was-biete-ich"
+				settings={{
+					extraPlaced: true,
+					headerPlaced: true,
+					buttonPlaced: true,
+				}}></HomeCard>
 		</div>
 	);
 }
