@@ -1,0 +1,58 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+	"light": #ece5da,
+	"mid": #d0b69a,
+	"dark": #936e4c,
+	"darker": #554f4b,
+	"error": #8c1f1f,
+);
+
+/* Color Theme */
+// $light: #ece5da;
+// $light: #e2ded8;
+// $light: #dfd8cd;
+// $light: #d5cfc5;
+// $light: #d7d1c7;
+$light: #d3cfc9;
+// $light: #dfdbd2;
+// $mid: #d0b69a;
+// $mid: #dad0c2;
+$mid: #cdc7ba;
+$dark: #936e4c;
+$darker: #554f4b;
+$darkest: #272422;
+$error: #8c1f1f;
+$green: #3a5b51;
+$darkerGreen: #2e4b42;
+$darkestGreen: #274139;
+
+/* Typography */
+$text_DM: "DM Serif Display", serif;
+$text_montserrat: "Montserrat", sans-serif;
+$text_poppins: "Poppins", sans-serif;
+$text_prata: "Prata", serif;
+$text_oldTT: "Old Standard TT", serif;
+$text_bodoni: "Bodoni Moda", serif;
+$text_vidaloka: "Vidaloka", serif;
+$text_libreBodoni: "Libre Bodoni", serif;
+$text_noto: "Noto Serif Display", serif;
+$text_trirong: "Trirong", serif;
+$text_chonburi: "Chonburi", serif;
+$text_cormorant: "Cormorant Garamond", serif;
+$text_allura: "Allura", cursive;
+
+/* Screen Sizes */
+$desktop: 1800px;
+$tablet: 1024px;
+$small-tablet: 712px;
+$phone: 480px;
+$small-phone: 360px;
+
+// @media (max-width: $tablet) {}
+// @media (max-width: $small-tablet) {}
+// @media (max-width: $phone) {}
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

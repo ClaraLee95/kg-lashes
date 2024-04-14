@@ -1,0 +1,48 @@
+@import "../../custom.scss";
+
+.lineContainer {
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+
+	&.vertical {
+	}
+
+	&.horizontal {
+		width: 100%;
+	}
+
+	.line {
+		&.vertical {
+			width: 1.5px;
+			height: 15px;
+		}
+
+		&.horizontal {
+			height: 1.8px;
+		}
+
+		&.light {
+			background-color: $light;
+		}
+
+		&.dark {
+			background-color: black;
+		}
+	}
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+	.lineContainer {
+		padding: 0.2rem;
+
+		.line {
+			width: 20px;
+			height: 1.5px;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+@import "../../custom.scss";
+
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+
+	margin: auto;
+	margin-top: 5rem;
+	bottom: 0;
+	padding: 2rem 0;
+	padding-top: 0.8rem;
+
+	height: 100%;
+}
+
+.footerRow {
+	display: flex;
+	flex-direction: row;
+
+	.footerItem {
+		margin: auto;
+		padding: 0 0.5rem;
+		vertical-align: middle;
+
+		.footerText {
+			font-size: 1rem;
+		}
+	}
+	.footerItem:not(:last-child) {
+		// border-right: 1.2px solid $light;
+	}
+}
+
+.footerColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: $small-tablet) {
+	.footerRow {
+		.footerItem {
+			.footerText {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+@media (max-width: $phone) {
+	.footerRow {
+		flex-direction: column;
+
+		.footerItem {
+			.footerText {
+				font-size: 0.7rem;
+			}
+		}
+	}
+}
