@@ -2,8 +2,9 @@
 
 .homeFaqsContainer {
 	background-color: $green;
-	width: calc(100vw - 20px);
-	margin-left: calc(-50vw + 50% + 10px);
+	width: 100vw;
+	margin-left: calc(-50vw + 50% - 5px);
+	text-align: center;
 
 	padding: 3rem 0;
 

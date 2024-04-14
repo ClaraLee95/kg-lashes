@@ -8,8 +8,18 @@
 
 	width: 25%;
 
+	.faqCardContentHeader {
+		min-height: 75px;
+	}
+
 	.faqCardContentText {
-		padding-bottom: 1rem;
+		margin-top: 1rem;
+		margin-bottom: auto;
+		vertical-align: top;
+	}
+
+	.faqCardButtonContainer {
+		margin-top: 1rem;
 	}
 }
 

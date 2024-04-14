@@ -1,18 +1,16 @@
 import React from "react";
-import image from "../../assets/background.jpg";
+import aboutMe1 from "../../assets/about_me_example1.webp";
+import aboutMe2 from "../../assets/about_me_example2.webp";
 
 import "./AboutMe.scss";
-
 function AboutMe() {
 	return (
 		<div className="aboutMeContainer">
-			<h1>Uber Mich</h1>
-			<img
-				className=""
-				src={image}
-				alt=""
-				style={{ width: 1200, margin: "auto" }}
-			/>
+			<div className="aboutMeHeaderContainer">
+				<div className="aboutMeHeaderName fontCursive">Katharina Gleixner</div>
+				<img src={aboutMe1} alt="" />
+			</div>
+			<div className="aboutMeContentContainer"></div>
 		</div>
 	);
 }

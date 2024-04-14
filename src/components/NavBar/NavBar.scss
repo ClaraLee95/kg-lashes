@@ -25,6 +25,8 @@
 
 	a.active {
 		font-weight: 700;
+		text-decoration: underline !important;
+		text-underline-position: under;
 	}
 }
 
