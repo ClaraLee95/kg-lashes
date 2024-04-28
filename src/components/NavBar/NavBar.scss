@@ -1,0 +1,40 @@
+@import "../../custom.scss";
+
+.navBar {
+	margin: 0 auto;
+	padding-top: 1.3rem;
+	padding-left: 3rem;
+	align-items: center;
+
+	width: calc(100vw - 40px);
+	height: 100%;
+
+	.logoSmall {
+		width: 40px;
+	}
+}
+
+@media (max-width: $tablet) {
+	.navBar {
+		padding-top: 1.5rem;
+	}
+}
+
+@media (max-width: $small-tablet) {
+	.navBar {
+		padding-top: 1.3rem;
+
+		.logoSmall {
+			width: 35px;
+		}
+	}
+}
+
+@media (max-width: $phone) {
+	.navBar {
+		padding-left: 1.5rem;
+		.logoSmall {
+			width: 28px;
+		}
+	}
+}

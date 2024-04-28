@@ -1,0 +1,215 @@
+@import "../../custom.scss";
+
+.backgroundContainer {
+	display: flex;
+
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.infoContainer {
+	display: flex;
+	flex-direction: row;
+	z-index: 2;
+
+	margin: 5% auto;
+	background-color: rgba($light, 0.5);
+
+	width: 75vw;
+	height: 550px;
+	max-width: 1300px;
+}
+
+.logoBigContainer {
+	margin: auto;
+	align-items: center;
+	text-align: center;
+
+	width: 45%;
+
+	.logo {
+		margin: 0 auto;
+
+		width: 65%;
+		height: auto;
+		min-width: 300px;
+		max-width: 380px;
+	}
+}
+
+.verticalLineContainer {
+	padding: 5% 0%;
+
+	.verticalLine {
+		float: left;
+		opacity: 0.5;
+		background-color: $darker;
+
+		width: 1.8px;
+		height: 100%;
+	}
+}
+
+.contactContainer {
+	margin: auto;
+	font-family: $text_prata;
+
+	width: 55%;
+
+	.underConstructionText {
+		margin: auto;
+		text-align: center;
+		padding: 2rem;
+		font-weight: 400;
+		font-size: 1.3rem;
+
+		max-width: 570px;
+	}
+
+	.listContainer {
+		margin: auto;
+		width: 40%;
+	}
+	.contactItem {
+		display: inline-flex;
+
+		padding: 0.8rem 0.5rem;
+		vertical-align: middle;
+	}
+	.contactIcon {
+		font-size: 1.2rem;
+	}
+	.contactText {
+		margin-left: 1rem;
+		font-size: 1.2rem;
+		font-weight: 500;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
+
+@media (max-width: $tablet) {
+	.infoContainer {
+		display: flex;
+		flex-direction: column;
+
+		margin: 5% auto;
+
+		width: 80vw;
+		height: 100%;
+	}
+
+	.logoBigContainer {
+		margin: 5rem auto;
+
+		.logo {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.verticalLineContainer {
+		padding: 0% 8%;
+
+		.verticalLine {
+			float: left;
+			background-color: $darker;
+
+			width: 100%;
+			height: 2.5px;
+		}
+	}
+
+	.contactContainer {
+		margin: 5rem auto;
+		width: 70%;
+
+		.listContainer {
+			width: 50%;
+		}
+		.underConstructionText {
+			padding: 1rem;
+			font-size: 1.4rem;
+		}
+		.contactIcon {
+			font-size: 1.4rem;
+		}
+		.contactText {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media (max-width: $small-tablet) {
+	.logoBigContainer {
+		margin: 4rem auto;
+
+		.logo {
+			min-width: 250px;
+		}
+	}
+
+	.contactContainer {
+		margin: 4rem auto;
+		width: 70%;
+
+		.listContainer {
+			width: 50%;
+		}
+		.underConstructionText {
+			padding: 1rem;
+			font-size: 1.2rem;
+		}
+		.contactIcon {
+			font-size: 1.2rem;
+		}
+		.contactText {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+@media (max-width: $phone) {
+	.infoContainer {
+		width: 90vw;
+	}
+
+	.logoBigContainer {
+		margin: 3rem auto;
+		width: 80%;
+
+		.logo {
+			min-width: 150px;
+		}
+	}
+
+	.verticalLineContainer {
+		padding: 0% 5%;
+	}
+
+	.contactContainer {
+		margin: 2rem auto;
+		width: 90%;
+
+		.listContainer {
+			width: 60%;
+		}
+		.underConstructionText {
+			padding: 1rem;
+			font-size: 1rem;
+		}
+		.contactItem {
+			padding: 0.3rem;
+		}
+		.contactIcon {
+			font-size: 1rem;
+		}
+		.contactText {
+			font-size: 1rem;
+		}
+	}
+}

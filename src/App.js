@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./components/NavBar/Navbar";
+import UnderConstruction from "./views/UnderConstruction/UnderConstruction";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import Footer from "./components/Footer/Footer";
+import Impressum from "./views/Impressum/Impressum";
+import Datenschutz from "./views/Datenschutz/Datenschutz";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<Router>
+			<div className="pageContainer">
+				<NavBar />
+				<div className="contentContainer">
+					<Routes>
+						<Route
+							path="/"
+							element={<UnderConstruction></UnderConstruction>}></Route>
+						<Route path="impressum" element={<Impressum></Impressum>}></Route>
+						<Route
+							path="datenschutz"
+							element={<Datenschutz></Datenschutz>}></Route>
+					</Routes>
+				</div>
+				<Footer></Footer>
+			</div>
+		</Router>
+	);
+};
 
 export default App;
