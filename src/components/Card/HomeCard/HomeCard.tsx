@@ -28,7 +28,7 @@ function HomeCard({ image, content, nav, settings }: HomeCardProps) {
 					</div>
 					<div className="homeCardContentText">{content.text}</div>
 					<div>
-						{settings.buttonPlaced ? (
+						{settings.buttonPlaced && content.button ? (
 							<NavLink to={nav} style={{ textDecoration: "none" }}>
 								<Button
 									theme={content.button.theme}

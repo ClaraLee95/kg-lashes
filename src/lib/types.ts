@@ -4,16 +4,16 @@ export type ButtonProps = {
 };
 
 export type ImageProps = {
-	location: string;
 	src: string;
 	alt: string;
+	location?: string;
 };
 
 export type ContentProps = {
 	header: string;
 	text: string;
-	button: ButtonProps;
-	extra?: JSX.Element | null;
+	button?: ButtonProps | null;
+	extra?: JSX.Element | string[] | null;
 };
 
 export type HomeCardProps = {
@@ -36,4 +36,9 @@ export type FaqCardProps = {
 export type LineProps = {
 	direction: string;
 	theme: string;
+};
+
+export type PriceListCardProps = {
+	image: ImageProps;
+	content: ContentProps;
 };

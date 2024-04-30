@@ -7,7 +7,7 @@ function Services() {
 	return (
 		<div className="servicesContainer">
 			<div className="servicesTop">
-				<div className="servicesTitle">Was Biete Ich</div>
+				<div className="servicesTitle fontHeaderBig">Was Biete Ich</div>
 				<div className="servicesSubtitle">
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 					nisi ut aliquip ex.

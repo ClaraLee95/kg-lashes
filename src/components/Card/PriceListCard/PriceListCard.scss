@@ -1,0 +1,33 @@
+@import "../../../custom.scss";
+
+.priceListCardContentContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	border: 1.5px solid rgba(black, 0.8);
+
+	.priceListCardContentLeft {
+		width: 32%;
+		padding: 2rem;
+	}
+
+	.priceListCardContentMiddle {
+		width: 32%;
+		padding: 2rem;
+	}
+
+	.priceListCardContentRight {
+		width: 36%;
+		padding: 2rem;
+	}
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

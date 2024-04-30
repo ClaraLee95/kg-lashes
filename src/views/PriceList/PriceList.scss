@@ -1,5 +1,21 @@
 @import "../../custom.scss";
 
+.priceListHeaderContainer {
+	background-color: $green;
+	width: 100vw;
+	height: 35vh;
+	margin-left: calc(-50vw + 50% - 6px);
+
+	display: flex;
+	align-items: center;
+
+	.priceListHeader {
+		padding-left: 10rem;
+		text-align: left;
+		vertical-align: middle;
+	}
+}
+
 @media (max-width: $tablet) {
 }
 
