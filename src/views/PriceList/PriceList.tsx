@@ -2,27 +2,84 @@ import React from "react";
 import PriceListCard from "../../components/Card/PriceListCard/PriceListCard";
 import "./PriceList.scss";
 
+import example from "../../assets/home_gallery_example1.jpg";
+
 function PriceList() {
 	const items = [
 		{
 			image: {
-				src: "",
-				alt: "",
+				src: example,
+				alt: "Classic",
 			},
 			content: {
-				header: "Lorem ipsum dolor sit amet?",
+				header: "Classic Type",
 				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			},
+			priceList: [
+				{ title: "Neu", prices: [100, 70] },
+				{
+					title: "Auffüllen bis 2 Wochen",
+					prices: [40, 28],
+				},
+				{
+					title: "Auffüllen bis 3 Wochen",
+					prices: [50, 35],
+				},
+				{
+					title: "Auffüllen bis 4 Wochen",
+					prices: [80, 56],
+				},
+			],
 		},
 		{
 			image: {
-				src: "",
-				alt: "",
+				src: example,
+				alt: "Another Type",
 			},
 			content: {
-				header: "Lorem ipsum dolor sit amet?",
+				header: "Another Type",
 				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			},
+			priceList: [
+				{ title: "Neu", prices: [100, 70] },
+				{
+					title: "Auffüllen bis 2 Wochen",
+					prices: [40, 28],
+				},
+				{
+					title: "Auffüllen bis 3 Wochen",
+					prices: [50, 35],
+				},
+				{
+					title: "Auffüllen bis 4 Wochen",
+					prices: [80, 56],
+				},
+			],
+		},
+		{
+			image: {
+				src: example,
+				alt: "Another Type 3",
+			},
+			content: {
+				header: "Another Type 3",
+				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			},
+			priceList: [
+				{ title: "Neu", prices: [100, 70] },
+				{
+					title: "Auffüllen bis 2 Wochen",
+					prices: [40, 28],
+				},
+				{
+					title: "Auffüllen bis 3 Wochen",
+					prices: [50, 35],
+				},
+				{
+					title: "Auffüllen bis 4 Wochen",
+					prices: [80, 56],
+				},
+			],
 		},
 	];
 
@@ -34,10 +91,11 @@ function PriceList() {
 					alt: item.image.alt,
 				}}
 				content={{
-					header: "Classic",
-					text: "",
+					header: item.content.header,
+					text: item.content.text,
 					extra: null,
-				}}></PriceListCard>
+				}}
+				priceList={item.priceList}></PriceListCard>
 		);
 	});
 
@@ -48,19 +106,7 @@ function PriceList() {
 					Priesliste
 				</div>
 			</div>
-			<div className="priceListContentContainer">
-				<PriceListCard
-					image={{
-						src: "",
-						alt: "Katharina Gleixner",
-					}}
-					content={{
-						header: "Classic",
-						text: "",
-						button: { theme: "light", text: "Mehr" },
-						extra: null,
-					}}></PriceListCard>
-			</div>
+			<div className="priceListContentContainer">{renderList}</div>
 		</div>
 	);
 }

@@ -13,7 +13,12 @@ export type ContentProps = {
 	header: string;
 	text: string;
 	button?: ButtonProps | null;
-	extra?: JSX.Element | string[] | null;
+	extra?: JSX.Element | Array<string> | null;
+};
+
+export type PriceListProps = {
+	title: string;
+	prices: Array<number>;
 };
 
 export type HomeCardProps = {
@@ -41,4 +46,5 @@ export type LineProps = {
 export type PriceListCardProps = {
 	image: ImageProps;
 	content: ContentProps;
+	priceList: Array<PriceListProps>;
 };

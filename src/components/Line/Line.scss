@@ -6,7 +6,9 @@
 	text-align: center;
 	vertical-align: middle;
 
-	&.vertical {
+	&.vertical,
+	&.verticalLong {
+		height: 100%;
 	}
 
 	&.horizontal {
@@ -19,8 +21,17 @@
 			height: 15px;
 		}
 
+		&.verticalLong {
+			width: 1.5px;
+			min-height: 200px;
+		}
+
 		&.horizontal {
 			height: 1.8px;
+		}
+
+		&.horizontalThin {
+			height: 1.2px;
 		}
 
 		&.light {
@@ -29,6 +40,10 @@
 
 		&.dark {
 			background-color: black;
+		}
+
+		&.grey {
+			background-color: rgba(black, 0.2);
 		}
 	}
 }
