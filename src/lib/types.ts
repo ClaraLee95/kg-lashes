@@ -1,16 +1,29 @@
+export type Theme = "light" | "dark" | "grey";
+
+export type Location = "left" | "right" | "middle";
+
+export type AllowedNav =
+	| "/"
+	| "uber-mich"
+	| "was-biete-ich"
+	| "preisliste"
+	| "faqs"
+	| "galerie"
+	| "kontakt";
+
 export type ButtonProps = {
-	theme: string;
+	theme: Theme;
 	text: string;
 };
 
 export type ImageProps = {
 	src: string;
 	alt: string;
-	location?: "left" | "right";
+	location?: Location;
 };
 
 export type ContentProps = {
-	header: string;
+	header?: string;
 	text: string;
 	button?: ButtonProps | null;
 	extra?: JSX.Element | Array<string> | null;
@@ -24,7 +37,7 @@ export type PriceListProps = {
 export type HomeCardProps = {
 	image: ImageProps;
 	content: ContentProps;
-	nav: string;
+	nav?: AllowedNav;
 	settings: HomeCardSettingProps;
 };
 
@@ -40,7 +53,7 @@ export type FaqCardProps = {
 
 export type LineProps = {
 	direction: "vertical" | "horizontal" | "verticalLong" | "horizontalThin";
-	theme: "light" | "dark" | "grey";
+	theme: Theme;
 };
 
 export type PriceListCardProps = {
@@ -51,7 +64,7 @@ export type PriceListCardProps = {
 
 export type SectionHeaderProps = {
 	header: string;
-	theme: "dark" | "light";
-	direction: "left" | "right" | "middle";
+	theme: Theme;
+	direction: Location;
 	extra?: string;
 };

@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 
 import "./Footer.scss";
 import Line from "../../components/Line/Line";
+import { Theme } from "../../lib/types";
 
-function Footer({ className }: { className: string }) {
+function Footer({ className, theme }: { className: string; theme: Theme }) {
 	const year = new Date().getFullYear();
 	return (
 		<div className={"footerContainer " + className}>
@@ -12,7 +13,7 @@ function Footer({ className }: { className: string }) {
 				<div className="footerItem">
 					<div className="footerText">&copy;{year} KG Aesthetic Lashes</div>
 				</div>
-				<Line direction="vertical" theme="dark"></Line>
+				<Line direction="vertical" theme={theme}></Line>
 				<div className="footerItem">
 					<NavLink
 						className="footerText"
@@ -21,7 +22,7 @@ function Footer({ className }: { className: string }) {
 						Datenschutzerklärung
 					</NavLink>
 				</div>
-				<Line direction="vertical" theme="dark"></Line>
+				<Line direction="vertical" theme={theme}></Line>
 				<div className="footerItem">
 					<NavLink
 						className="footerText"
@@ -30,7 +31,7 @@ function Footer({ className }: { className: string }) {
 						Impressum
 					</NavLink>
 				</div>
-				<Line direction="vertical" theme="dark"></Line>
+				<Line direction="vertical" theme={theme}></Line>
 				<div className="footerItem">
 					<NavLink
 						className="footerText"

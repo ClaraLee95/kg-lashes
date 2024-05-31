@@ -12,13 +12,15 @@ import Gallery from "./views/Gallery/Gallery";
 import Contact from "./views/Contact/Contact";
 import DataProtection from "./views/DataProtection/DataProtection";
 import Impressum from "./views/Impressum/Impressum";
+import { Theme } from "./lib/types";
 
 const App = () => {
 	const location = useLocation();
 	const [previousLocation, setPreviousLocation] = useState("");
 	const [currentLocation, setCurrentLocation] = useState("/");
 	let bodyClass = "backgroundLight fontDark",
-		theme = "light";
+		theme = "light" as Theme,
+		lineColor = "dark" as Theme;
 
 	if (
 		location.pathname === "/was-biete-ich" ||
@@ -26,9 +28,11 @@ const App = () => {
 	) {
 		bodyClass = "backgroundDark fontLight";
 		theme = "dark";
+		lineColor = "light";
 	} else {
 		bodyClass = "backgroundLight fontDark";
 		theme = "light";
+		lineColor = "dark";
 	}
 
 	useEffect(() => {
@@ -57,7 +61,7 @@ const App = () => {
 					<Route path="impressum" element={<Impressum></Impressum>}></Route>
 				</Routes>
 			</div>
-			<Footer className="fontFooter"></Footer>
+			<Footer className="fontFooter" theme={lineColor}></Footer>
 		</div>
 	);
 };
