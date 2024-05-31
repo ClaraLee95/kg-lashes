@@ -1,4 +1,4 @@
-export type Theme = "light" | "dark" | "grey";
+export type Theme = "light" | "dark" | "grey" | "transparent";
 
 export type Location = "left" | "right" | "middle";
 

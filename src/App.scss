@@ -149,6 +149,11 @@ body {
 	font-family: $text_allura;
 }
 
+.fontNumber {
+	font-family: $text_libreBodoni;
+	font-weight: 700;
+}
+
 /* -------- Responsive -------- */
 @media (max-width: $tablet) {
 	body {

@@ -16,18 +16,18 @@ function PriceList() {
 				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			},
 			priceList: [
-				{ title: "Neu", prices: [100, 70] },
+				{ title: "Neu", prices: [100] },
 				{
 					title: "Auffüllen bis 2 Wochen",
-					prices: [40, 28],
+					prices: [40],
 				},
 				{
 					title: "Auffüllen bis 3 Wochen",
-					prices: [50, 35],
+					prices: [50],
 				},
 				{
 					title: "Auffüllen bis 4 Wochen",
-					prices: [80, 56],
+					prices: [80],
 				},
 			],
 		},
@@ -41,18 +41,18 @@ function PriceList() {
 				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			},
 			priceList: [
-				{ title: "Neu", prices: [100, 70] },
+				{ title: "Neu", prices: [100] },
 				{
 					title: "Auffüllen bis 2 Wochen",
-					prices: [40, 28],
+					prices: [40],
 				},
 				{
 					title: "Auffüllen bis 3 Wochen",
-					prices: [50, 35],
+					prices: [50],
 				},
 				{
 					title: "Auffüllen bis 4 Wochen",
-					prices: [80, 56],
+					prices: [80],
 				},
 			],
 		},
@@ -66,18 +66,18 @@ function PriceList() {
 				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			},
 			priceList: [
-				{ title: "Neu", prices: [100, 70] },
+				{ title: "Neu", prices: [100] },
 				{
 					title: "Auffüllen bis 2 Wochen",
-					prices: [40, 28],
+					prices: [40],
 				},
 				{
 					title: "Auffüllen bis 3 Wochen",
-					prices: [50, 35],
+					prices: [50],
 				},
 				{
 					title: "Auffüllen bis 4 Wochen",
-					prices: [80, 56],
+					prices: [80],
 				},
 			],
 		},

@@ -10,7 +10,7 @@ function HomeLogo() {
 				className="blob"
 				src={blob}
 				alt=""
-				style={{ width: 600, margin: "auto" }}
+				style={{ width: 650, margin: "auto" }}
 			/>
 			<img
 				className="logoBigWhite"

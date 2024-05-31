@@ -13,11 +13,13 @@ import Contact from "./views/Contact/Contact";
 import DataProtection from "./views/DataProtection/DataProtection";
 import Impressum from "./views/Impressum/Impressum";
 import { Theme } from "./lib/types";
+import CookieConsent from "react-cookie-consent";
 
 const App = () => {
 	const location = useLocation();
 	const [previousLocation, setPreviousLocation] = useState("");
 	const [currentLocation, setCurrentLocation] = useState("/");
+
 	let bodyClass = "backgroundLight fontDark",
 		theme = "light" as Theme,
 		lineColor = "dark" as Theme;
@@ -45,6 +47,20 @@ const App = () => {
 
 	return (
 		<div className={"pageContainer " + bodyClass}>
+			<CookieConsent debug>
+				<button
+					style={{
+						color: "gray",
+					}}>
+					I am a custom config button
+				</button>
+				<span
+					style={{
+						fontSize: "10px",
+					}}>
+					This bit of text is smaller :O
+				</span>
+			</CookieConsent>
 			<NavBar className="fontMenu" theme={theme} />
 			<div className="container">
 				<Routes>

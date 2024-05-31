@@ -11,14 +11,14 @@ function PriceListCard({ image, content, priceList }: PriceListCardProps) {
 			prices = (
 				<>
 					<div className="priceStrikeThrough">
-						&#8364;
+						<span className="priceEuroSymbol">&#8364;</span>
 						{item.prices[0]}
 					</div>
 					<div>
 						<FaLongArrowAltRight className="priceArrow"></FaLongArrowAltRight>
 					</div>
-					<div className="priceCurrent fontTextBold">
-						&#8364;
+					<div className="priceCurrent">
+						<span className="priceEuroSymbol">&#8364;</span>
 						{item.prices[1]}
 					</div>
 				</>
@@ -26,8 +26,8 @@ function PriceListCard({ image, content, priceList }: PriceListCardProps) {
 		} else {
 			prices = (
 				<>
-					<div className="priceCurrent fontTextBold">
-						&#8364;
+					<div className="priceCurrent">
+						<span className="priceEuroSymbol">&#8364;</span>
 						{item.prices[0]}
 					</div>
 				</>
@@ -42,7 +42,7 @@ function PriceListCard({ image, content, priceList }: PriceListCardProps) {
 			<>
 				<div className="priceOneLineContainer">
 					<div className="priceOneLineTitle fontTextBold">{item.title}</div>
-					<div className="priceOneLinePrices">{prices}</div>
+					<div className="priceOneLinePrices fontNumber">{prices}</div>
 				</div>
 				<div>{line}</div>
 			</>

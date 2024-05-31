@@ -56,12 +56,18 @@
 			text-decoration: line-through;
 		}
 
+		.priceEuroSymbol {
+			margin-right: 0.5rem;
+		}
+
 		.priceArrow {
 			color: $error;
 		}
 
 		.priceCurrent {
 			color: $error;
+			width: 100%;
+			text-align: right;
 		}
 	}
 }
