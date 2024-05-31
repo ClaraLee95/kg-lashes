@@ -28,12 +28,8 @@ function AboutMe() {
 						location: "left",
 					}}
 					content={{
-						header: "",
 						text: aboutMeText,
-						button: { theme: "light", text: "Mehr" },
-						extra: null,
 					}}
-					nav="uber-mich"
 					settings={{
 						extraPlaced: false,
 						headerPlaced: false,

@@ -4,11 +4,13 @@
 	&.normalFlex {
 		display: flex;
 		flex-direction: row;
+		vertical-align: middle;
 	}
 
 	&.reverseFlex {
 		display: flex;
 		flex-direction: row-reverse;
+		vertical-align: middle;
 	}
 
 	.sectionHeader {
@@ -22,6 +24,12 @@
 
 		&.dark {
 			color: black;
+		}
+
+		&.middle {
+			padding: 1rem;
+			margin: auto;
+			margin-top: 1rem;
 		}
 	}
 

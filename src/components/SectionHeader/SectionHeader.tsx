@@ -21,7 +21,8 @@ function SectionHeader({
 	let render = (
 		<>
 			{extraLineBeforeText}
-			<div className={`sectionHeader fontHeader ${theme} ${extra!}`}>
+			<div
+				className={`sectionHeader fontHeader ${theme} ${direction} ${extra!}`}>
 				{header}
 			</div>
 			<Line direction="horizontal" theme={theme}></Line>

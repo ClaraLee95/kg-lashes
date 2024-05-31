@@ -22,7 +22,7 @@ function HomeCard({ image, content, nav, settings }: HomeCardProps) {
 					<div className="homeCardContentHeader">
 						{settings.headerPlaced ? (
 							<SectionHeader
-								header={content.header}
+								header={content.header!}
 								theme="dark"
 								direction="left"></SectionHeader>
 						) : null}
@@ -30,7 +30,7 @@ function HomeCard({ image, content, nav, settings }: HomeCardProps) {
 					<div className="homeCardContentText">{content.text}</div>
 					<div>
 						{settings.buttonPlaced && content.button ? (
-							<NavLink to={nav} style={{ textDecoration: "none" }}>
+							<NavLink to={nav!} style={{ textDecoration: "none" }}>
 								<Button
 									theme={content.button.theme}
 									text={content.button.text}></Button>

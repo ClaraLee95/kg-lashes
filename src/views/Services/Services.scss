@@ -13,19 +13,17 @@
 
 	.servicesSubtitle {
 		font-size: 1.3rem;
-		width: 40%;
+		width: 50%;
 		margin: auto;
 
 		display: flex;
+		flex-direction: column;
+
 		margin: 3rem auto;
-		justify-content: space-between;
 
 		font-family: $text_libreBodoni;
 
 		.quoteLeft {
-			margin-top: -1.5rem;
-			margin-right: -2rem;
-			z-index: 1;
 			font-size: 5rem;
 		}
 
@@ -37,33 +35,17 @@
 		}
 
 		.quoteRight {
-			margin-top: 4rem;
-			margin-left: -3rem;
-			z-index: 1;
 			font-size: 5rem;
 		}
 	}
 }
 
-.servicesImage {
-	margin: 9rem auto;
+.serviceContentContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
 
-	img {
-		width: 70%;
-	}
-}
-
-.servicesText {
-	width: 70%;
-	margin: auto;
-
-	font-weight: 500;
-	font-size: 1.2rem;
-}
-
-.quoteSymbol {
-	color: white;
-	opacity: 0.8;
+	margin: 10rem 5rem;
 }
 
 mark.scrollHighlight {
