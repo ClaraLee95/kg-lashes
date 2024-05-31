@@ -17,6 +17,10 @@ function HomeFAQs() {
 			header: "Ut enim ad minim?",
 			text: "Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		},
+		{
+			header: "Duis aute irure dolor?",
+			text: "Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		},
 	];
 
 	const renderFaqs = items.map((item, index) => {
