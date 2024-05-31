@@ -70,6 +70,8 @@ function DataProtection() {
 						Wir freuen uns über Ihr Interesse an unserem Instagram-Account. Der
 						Schutz Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend
 						informieren wir Sie ausführlich über den Umgang mit Ihren Daten.
+						<br />
+						<br />
 						<div>
 							<div className="datenschutzTextSubheader">
 								1. Erhebung, Verarbeitung und Nutzung personenbezogener Daten
