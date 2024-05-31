@@ -24,7 +24,7 @@ function HomeServices() {
 				}}
 				nav="was-biete-ich"
 				settings={{
-					extraPlaced: true,
+					extraPlaced: false,
 					headerPlaced: true,
 					buttonPlaced: true,
 				}}></HomeCard>

@@ -8,7 +8,7 @@ import "./HomeCard.scss";
 function HomeCard({ image, content, nav, settings }: HomeCardProps) {
 	const imgLocation = image.location === "left" ? "imageLeft" : "imageRight";
 	return (
-		<div className={imgLocation}>
+		<div className={"homeCardContainer " + imgLocation}>
 			<div className="homeCardImageContainer">
 				<img src={image.src} alt={image.alt} />
 			</div>
