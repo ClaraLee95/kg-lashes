@@ -1,5 +1,5 @@
 import React from "react";
-import logoBigWhite from "../../../assets/logo_big_white_shadow.png";
+import logoBigWhite from "../../../assets/logo_big_white_no_shadow.png";
 import blob from "../../../assets/background_blob.gif";
 import "./HomeLogo.scss";
 
@@ -10,13 +10,13 @@ function HomeLogo() {
 				className="blob"
 				src={blob}
 				alt=""
-				style={{ width: 500, margin: "auto" }}
+				style={{ width: 600, margin: "auto" }}
 			/>
 			<img
 				className="logoBigWhite"
 				src={logoBigWhite}
 				alt="AG Aesthetic Lashes"
-				style={{ width: 350, margin: "auto" }}
+				style={{ width: 450, margin: "auto" }}
 			/>
 		</div>
 	);

@@ -8,13 +8,15 @@
 	.blob {
 		position: relative;
 		top: 0;
-		left: 30%;
+		left: 50%;
+		transform: translate(-50%, 0%);
 	}
 
 	.logoBigWhite {
 		position: absolute;
-		top: 12rem;
-		left: 36%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 
