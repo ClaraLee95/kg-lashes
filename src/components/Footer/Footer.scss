@@ -13,30 +13,11 @@
 	padding-top: 0.8rem;
 
 	height: 100%;
-
-	a {
-		text-decoration: none;
-	}
 }
 
 .footerRow {
 	display: flex;
 	flex-direction: row;
-
-	font-family: $text_prata;
-
-	.lineContainer {
-		padding: 5px;
-		margin: auto;
-		text-align: center;
-
-		.line {
-			background-color: $light;
-
-			width: 1.5px;
-			height: 15px;
-		}
-	}
 
 	.footerItem {
 		margin: auto;
@@ -44,9 +25,6 @@
 		vertical-align: middle;
 
 		.footerText {
-			color: white;
-			font-weight: 600;
-			font-family: $text_noto;
 			font-size: 1rem;
 		}
 	}
@@ -72,15 +50,6 @@
 @media (max-width: $phone) {
 	.footerRow {
 		flex-direction: column;
-
-		.lineContainer {
-			padding: 0.2rem;
-
-			.line {
-				width: 20px;
-				height: 1.5px;
-			}
-		}
 
 		.footerItem {
 			.footerText {

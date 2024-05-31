@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./HomeGallery.scss";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
 

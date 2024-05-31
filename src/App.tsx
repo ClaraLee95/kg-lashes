@@ -37,7 +37,7 @@ const App = () => {
 			window.scrollTo(0, 0);
 			setPreviousLocation(currentLocation);
 		}
-	}, [location]);
+	}, [location, previousLocation, currentLocation]);
 
 	return (
 		<div className={"pageContainer " + bodyClass}>
