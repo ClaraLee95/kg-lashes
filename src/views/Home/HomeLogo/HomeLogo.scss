@@ -1,0 +1,28 @@
+@import "../../../custom.scss";
+
+.homeLogoContainer {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	.blob {
+		position: relative;
+		top: 0;
+		left: 30%;
+	}
+
+	.logoBigWhite {
+		position: absolute;
+		top: 12rem;
+		left: 36%;
+	}
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

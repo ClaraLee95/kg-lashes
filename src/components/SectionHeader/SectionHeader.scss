@@ -1,0 +1,26 @@
+@import "../../custom.scss";
+
+.sectionHeaderContainer {
+	display: flex;
+	flex-direction: row;
+
+	.sectionHeader {
+		max-width: 150px;
+		min-width: fit-content;
+		padding-right: 1rem;
+
+		&.light {
+			color: $light;
+		}
+
+		&.dark {
+			color: black;
+		}
+	}
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

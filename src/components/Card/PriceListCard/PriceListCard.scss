@@ -1,0 +1,76 @@
+@import "../../../custom.scss";
+
+.priceListCardContentContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+
+	border: 1.5px solid rgba(black, 0.8);
+
+	.priceListCardContentLeft {
+		width: 34%;
+		padding: 2rem;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.priceListCardContentMiddle {
+		width: 30%;
+		padding: 2rem;
+		padding-left: 0rem;
+
+		.priceListCardContentMiddleText {
+			margin: 0.5rem 0rem;
+		}
+	}
+
+	.priceListCardContentRight {
+		width: 36%;
+		padding: 2rem;
+		margin: auto;
+	}
+}
+
+.priceOneLineContainer {
+	display: flex;
+	flex-direction: row;
+
+	.priceOneLineTitle {
+		width: 70%;
+		padding: 0rem 0.5rem;
+	}
+
+	.priceOneLinePrices {
+		display: flex;
+		flex-direction: row;
+		gap: 0.1rem;
+		vertical-align: bottom;
+
+		width: 30%;
+		padding: 0rem 0.5rem;
+
+		.priceStrikeThrough {
+			color: rgba(black, 0.5);
+			text-decoration: line-through;
+		}
+
+		.priceArrow {
+			color: $error;
+		}
+
+		.priceCurrent {
+			color: $error;
+		}
+	}
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

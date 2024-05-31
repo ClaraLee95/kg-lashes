@@ -1,0 +1,16 @@
+@import "../../custom.scss";
+
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10rem;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}

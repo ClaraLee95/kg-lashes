@@ -1,0 +1,63 @@
+@import "../../custom.scss";
+
+.faqHeaderContainer {
+	background-color: $green;
+	width: 100vw;
+	height: 35vh;
+	margin-left: calc(-50vw + 50% - 6px);
+
+	display: flex;
+	align-items: center;
+
+	.faqHeader {
+		width: 100%;
+		text-align: right;
+		padding-right: 10rem;
+		vertical-align: middle;
+	}
+}
+
+.faqContentContainer {
+	padding: 5rem 2rem;
+
+	.accordion {
+		width: 80%;
+		margin: auto;
+		background-color: $lightGreen;
+	}
+
+	.accordion-button,
+	.accordion-button:not(.collapsed) {
+		background-color: $green;
+
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: white;
+
+		box-shadow: none;
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		&::after {
+			color: white;
+			-webkit-filter: invert(100%); /* Safari/Chrome */
+			filter: invert(100%);
+		}
+	}
+
+	.accordion-body {
+		padding: 1.5rem 2rem;
+		background-color: $lightGreen;
+	}
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}
