@@ -23,7 +23,8 @@ function HomeCard({ image, content, nav, settings }: HomeCardProps) {
 						{settings.headerPlaced ? (
 							<SectionHeader
 								header={content.header}
-								theme="dark"></SectionHeader>
+								theme="dark"
+								direction="left"></SectionHeader>
 						) : null}
 					</div>
 					<div className="homeCardContentText">{content.text}</div>

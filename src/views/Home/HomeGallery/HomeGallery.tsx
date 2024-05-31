@@ -32,7 +32,10 @@ function HomeGallery() {
 	return (
 		<>
 			<div className="homeGalleryContainer">
-				<SectionHeader header="Galerie" theme="dark"></SectionHeader>
+				<SectionHeader
+					header="Galerie"
+					theme="dark"
+					direction="left"></SectionHeader>
 				<div className="slider-container">
 					<Slider {...settings}>
 						<div className="sliderImageContainer">

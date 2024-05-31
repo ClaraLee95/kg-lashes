@@ -1,6 +1,6 @@
 import React from "react";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import image from "../../assets/services_example.png";
-
 import "./Services.scss";
 
 function Services() {
@@ -9,8 +9,27 @@ function Services() {
 			<div className="servicesTop">
 				<div className="servicesTitle fontHeaderBig">Was Biete Ich</div>
 				<div className="servicesSubtitle">
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-					nisi ut aliquip ex.
+					<div className="quoteLeft">
+						<SectionHeader
+							header="&ldquo;"
+							theme="light"
+							direction="middle"
+							extra="extraBig"></SectionHeader>
+					</div>
+					<div className="quoteText fontSubheader">
+						Mein Ziel ist es,
+						<br />
+						<mark className="scrollHighlight">Deine Schonheit zu betonen,</mark>
+						<br />
+						damit Du dich in Deiner Haut wohl fülst.
+					</div>
+					<div className="quoteRight">
+						<SectionHeader
+							header="&rdquo;"
+							theme="light"
+							direction="middle"
+							extra="extraBig"></SectionHeader>
+					</div>
 				</div>
 			</div>
 			<div className="servicesImage">

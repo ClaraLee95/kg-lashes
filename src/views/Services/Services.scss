@@ -15,6 +15,33 @@
 		font-size: 1.3rem;
 		width: 40%;
 		margin: auto;
+
+		display: flex;
+		margin: 3rem auto;
+		justify-content: space-between;
+
+		font-family: $text_libreBodoni;
+
+		.quoteLeft {
+			margin-top: -1.5rem;
+			margin-right: -2rem;
+			z-index: 1;
+			font-size: 5rem;
+		}
+
+		.quoteText {
+			width: 100%;
+			margin-left: -1rem;
+			text-align: center;
+			z-index: 2;
+		}
+
+		.quoteRight {
+			margin-top: 4rem;
+			margin-left: -3rem;
+			z-index: 1;
+			font-size: 5rem;
+		}
 	}
 }
 
@@ -32,6 +59,38 @@
 
 	font-weight: 500;
 	font-size: 1.2rem;
+}
+
+.quoteSymbol {
+	color: white;
+	opacity: 0.8;
+}
+
+mark.scrollHighlight {
+	// Reference: https://frontendmasters.com/blog/highlight-text-when-a-user-scrolls-down-to-that-piece-of-text/
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: linear-gradient(rgb(white, 0.8), rgb(white, 0.8));
+	//161, 84, 161
+
+	animation: textHighlight linear;
+	animation-fill-mode: forwards;
+	animation-timeline: scroll();
+	animation-iteration-count: 1;
+	animation-range: contain 0% contain 25%;
+	animation-duration: 1ms; /* Firefox requires this to apply the animation */
+
+	font-weight: 800;
+}
+
+@keyframes textHighlight {
+	0% {
+		background-size: 0 100%;
+	}
+	100% {
+		background-size: 100% 100%;
+	}
 }
 
 @media (max-width: $tablet) {

@@ -1,8 +1,15 @@
 @import "../../custom.scss";
 
 .sectionHeaderContainer {
-	display: flex;
-	flex-direction: row;
+	&.normalFlex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&.reverseFlex {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 
 	.sectionHeader {
 		max-width: 150px;
@@ -10,12 +17,16 @@
 		padding-right: 1rem;
 
 		&.light {
-			color: $light;
+			color: white;
 		}
 
 		&.dark {
 			color: black;
 		}
+	}
+
+	.extraBig {
+		font-size: 5rem;
 	}
 }
 
