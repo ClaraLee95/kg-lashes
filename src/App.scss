@@ -33,6 +33,13 @@ body {
 	height: calc(80vh - 20px);
 	z-index: 1;
 	// scrollbar-gutter: stable both-edges;
+	background-image: url("./assets/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: calc(100vw - 20px);
+	height: calc(80vh - 20px);
+	z-index: 1;
 	white-space: initial;
 }
 
@@ -154,6 +161,12 @@ body {
 }
 
 /* -------- Responsive -------- */
+
+
+.contentContainer {
+	flex: 1;
+}
+
 @media (max-width: $tablet) {
 	body {
 		width: 100vw;

@@ -1,6 +1,6 @@
 @import "../../custom.scss";
 
-.impressumContainer {
+.datenschutzContainer {
 	margin: 5% auto;
 	padding: 2rem;
 	background-color: rgba($light, 0.5);
@@ -9,7 +9,7 @@
 	height: 100%;
 	max-width: 1300px;
 
-	.impressumHeader {
+	.datenschutzHeader {
 		margin: auto;
 		padding: 3rem;
 		text-align: center;
@@ -18,44 +18,44 @@
 	}
 }
 
-.impressumText {
+.datenschutzText {
 	margin: auto;
 	padding: 5rem;
 	padding-top: 2rem;
 	font-family: $text_montserrat;
 
-	.impressumTextContainer {
+	.datenschutzTextContainer {
 		margin-bottom: 4rem;
 	}
 
-	.impressumTextHeader {
+	.datenschutzTextHeader {
 		font-size: 1.5rem;
 		font-weight: 500;
 	}
 
-	.impressumTextSubheader {
+	.datenschutzTextSubheader {
 		font-size: 1rem;
 		font-weight: 500;
 	}
 }
 
 @media (max-width: $tablet) {
-	.impressumContainer {
+	.datenschutzContainer {
 		width: 90vw;
 
-		.impressumHeader {
+		.datenschutzHeader {
 			font-size: 3rem;
 		}
 
-		.impressumText {
+		.datenschutzText {
 			padding: 3rem;
 			padding-top: 2rem;
 
-			.impressumTextHeader {
+			.datenschutzTextHeader {
 				font-size: 1.3rem;
 			}
 
-			.impressumTextSubheader {
+			.datenschutzTextSubheader {
 				font-size: 1rem;
 			}
 		}
@@ -63,14 +63,14 @@
 }
 
 @media (max-width: $small-tablet) {
-	.impressumContainer {
+	.datenschutzContainer {
 		width: 95vw;
 
-		.impressumHeader {
+		.datenschutzHeader {
 			font-size: 2.3rem;
 		}
 
-		.impressumText {
+		.datenschutzText {
 			padding: 2rem;
 			padding-top: 1rem;
 		}
@@ -78,24 +78,24 @@
 }
 
 @media (max-width: $phone) {
-	.impressumContainer {
+	.datenschutzContainer {
 		width: 95vw;
 
-		.impressumHeader {
+		.datenschutzHeader {
 			font-size: 1.4rem;
 			padding: 1rem;
 		}
 
-		.impressumText {
+		.datenschutzText {
 			padding: 1rem;
 			padding-top: 0.5rem;
 			font-size: 0.8rem;
 
-			.impressumTextHeader {
+			.datenschutzTextHeader {
 				font-size: 1.1rem;
 			}
 
-			.impressumTextSubheader {
+			.datenschutzTextSubheader {
 				font-size: 0.8rem;
 			}
 		}

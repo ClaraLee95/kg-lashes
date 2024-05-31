@@ -19,20 +19,32 @@
     4. Share any other tips or guidance for others attempting this or something similar.
  -->
 
-The purpose of this project is to create a website for KG Aesthetic Lashes to showcase the following:
+The purpose of this project is to create a website for a small business named KG Aesthetic Lashe, to practice and showcase the following self-taught technologies:
 
 - UI Design
-- Front-end development with React JS
+- Frontend development with React, TypeScript, and SCSS
 
-The main functionalities of the website is to present business-related data, such was services offered, price list, and contact information.
+The main functionalities of the website is to present business-related data, such as services offered, price list, and contact information.
 
-#### UI Example 1 - Under Construction Page
+You can check the live website here: [KG Aesthetic Lashes](https://www.kg-lashes.de/)
 
-<img src="./src/assets/readme_underConstruction.png" alt="Under Construction Page" style="width:350px;height:auto;">
 
-#### UI Example 2 - Under Construction Page (Mobile)
+#### UI Example 1 - Figma Prototypes
 
-<img src="./src/assets/readme_underConstruction_mobile.png" alt="Under Construction Page (Mbile)" style="width:180px;height:auto;">
+<img src="./src/assets/readme_figma.png" alt="Figma Prototypes" style="width:500px;height:auto;">
+
+
+#### UI Example 2 - Under Construction Page (Desktop)
+
+<img src="./src/assets/readme_underConstruction.png" alt="Under Construction Page (Desktop)" style="width:400px;height:auto;">
+
+#### UI Example 3 - Under Construction Page (Tablet)
+
+<img src="./src/assets/readme_underConstruction_tablet.png" alt="Under Construction Page (Tablet)" style="width:230px;height:auto;">
+
+#### UI Example 4 - Under Construction Page (Mobile)
+
+<img src="./src/assets/readme_underConstruction_mobile.png" alt="Under Construction Page (Mobile)" style="width:180px;height:auto;">
 
 ## Installation
 
@@ -45,13 +57,12 @@ Once installation is completed, run `npm start` to startup the application local
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 
 - [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [styled-components](https://styled-components.com/)
 - [React Bootstrap](https://react-bootstrap.netlify.app/)
 - [React Router](https://reactrouter.com/en/main)
 - [Git](https://git-scm.com/)
 - [Github](https://github.com/)
-- [Node JS](https://nodejs.org/en)
 
 ## Features
 
@@ -81,16 +92,18 @@ Frequently asked questions.
 
 Gallery with photos.
 
-### Kontakt
+#### Kontakt
 
 Contact page with a form that sends an email.
 
 ## Project Status
 
+The project is currently on-going. The first version "Under Construction" went live on April 3rd, 2024.
+
+The second version, the fully-functioning website is scheduled to be released in May, 2024.
+
 ## Contact
 
-<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
-
-## Acknowledgements
-
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->
+- [Email](mailto:clara.klaerner@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/hyunji-clara-lee/)
+- [Portfolio](https://www.clara-lee.net/)

@@ -1,18 +1,4 @@
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
-}
-
-body {
 	font-family: "Montserrat Variable", sans-serif;
 	font-family: "Poppins", sans-serif;
 	font-family: "DM Serif Display", serif;
@@ -26,5 +12,4 @@ body {
 	font-family: "Chonburi", serif;
 	font-family: "Montserrat", sans-serif;
 	font-family: "Cormorant Garamond", serif;
-	font-family: "Allura", cursive;
 }
