@@ -1,6 +1,7 @@
 import React from "react";
 import aboutMe1 from "../../assets/about_me_example1.webp";
 import aboutMe2 from "../../assets/about_me_example2.webp";
+import aboutMeLogo from "../../assets/logo_big_black_no_shadow.png";
 
 import "./AboutMe.scss";
 import HomeCard from "../../components/Card/HomeCard/HomeCard";
@@ -12,7 +13,11 @@ function AboutMe() {
 	return (
 		<div className="aboutMeContainer">
 			<div className="aboutMeHeaderContainer">
-				<div className="aboutMeHeaderName fontCursive">Katharina Gleixner</div>
+				<img
+					className="aboutMeHeaderLogo"
+					src={aboutMeLogo}
+					alt="KG Aesthetic Lashes Logo"
+				/>
 				<img src={aboutMe1} alt="" />
 			</div>
 			<div className="aboutMeContentContainer">

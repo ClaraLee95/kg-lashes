@@ -3,17 +3,17 @@
 .aboutMeHeaderContainer {
 	background-color: rgba($green, 0.5);
 	width: 100vw;
-	margin-left: calc(-50vw + 50% - 6px);
+	margin-left: calc(-50vw + 50% - 0px);
 	position: relative;
 
 	padding: 2rem;
 	text-align: center;
 
-	.aboutMeHeaderName {
+	.aboutMeHeaderLogo {
 		position: absolute;
 		top: 20%;
 		left: 30%;
-		font-size: 3rem;
+		width: 20%;
 	}
 
 	img {
