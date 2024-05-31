@@ -6,15 +6,19 @@
 	justify-content: space-between;
 
 	margin: 0 auto;
-	padding: 1.5rem 3rem;
+	padding: 2rem 0rem;
 	align-items: center;
 
 	// width: 100vw;
 	width: calc(100vw - 40px);
 	height: 100%;
 
-	.logoSmall {
-		width: 40px;
+	.logoContainer {
+		margin-left: 2rem;
+
+		.logoSmall {
+			width: 40px;
+		}
 	}
 }
 

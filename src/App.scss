@@ -48,10 +48,6 @@ body {
 	flex: 1;
 }
 
-::selection {
-	background: rgba($green, 0.5);
-}
-
 /* -------- Scroll Bar -------- */
 * {
 	scrollbar-width: thin;

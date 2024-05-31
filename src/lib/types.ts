@@ -6,7 +6,7 @@ export type ButtonProps = {
 export type ImageProps = {
 	src: string;
 	alt: string;
-	location?: string;
+	location?: "left" | "right";
 };
 
 export type ContentProps = {
@@ -39,12 +39,19 @@ export type FaqCardProps = {
 };
 
 export type LineProps = {
-	direction: string;
-	theme: string;
+	direction: "vertical" | "horizontal" | "verticalLong" | "horizontalThin";
+	theme: "light" | "dark" | "grey";
 };
 
 export type PriceListCardProps = {
 	image: ImageProps;
 	content: ContentProps;
 	priceList: Array<PriceListProps>;
+};
+
+export type SectionHeaderProps = {
+	header: string;
+	theme: "dark" | "light";
+	direction: "left" | "right" | "middle";
+	extra?: string;
 };

@@ -6,7 +6,7 @@ import "./FAQs.scss";
 function FAQs() {
 	return (
 		<div className="faqContainer">
-			<div className="faqHeaderContainer">
+			<div className="faqHeaderContainer backgroundDark">
 				<div className="faqHeader fontHeaderBig fontLight">FAQs</div>
 			</div>
 			<div className="faqContentContainer fontText">

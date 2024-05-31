@@ -36,10 +36,13 @@ function HomeFAQs() {
 	});
 
 	return (
-		<div className="homeFaqsContainer fontLight">
+		<div className="homeFaqsContainer backgroundDark fontLight">
 			<div className="container">
 				<div className="homeFaqsSectionHeader">
-					<SectionHeader header="FAQs" theme="light"></SectionHeader>
+					<SectionHeader
+						header="FAQs"
+						theme="light"
+						direction="left"></SectionHeader>
 				</div>
 				<div className="homeFaqsCardContainer">{renderFaqs}</div>
 			</div>

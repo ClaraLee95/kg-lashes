@@ -101,9 +101,9 @@ function PriceList() {
 
 	return (
 		<div className="priceListContainer">
-			<div className="priceListHeaderContainer">
+			<div className="priceListHeaderContainer backgroundDark">
 				<div className="priceListHeader fontHeaderBig fontLight">
-					Priesliste
+					Preisliste
 				</div>
 			</div>
 			<div className="priceListContentContainer">{renderList}</div>
