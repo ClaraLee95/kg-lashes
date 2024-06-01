@@ -1,5 +1,44 @@
 @import "../../custom.scss";
 
+.galleryContainer {
+	font-family: $text_libreBodoni;
+	font-optical-sizing: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: 5rem auto;
+}
+
+.galleryTop {
+	margin: 5rem auto;
+}
+
+.galleryContentContainer {
+	padding-top: 3rem;
+
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+
+	.galleryBig {
+		margin: 0.5rem 0rem;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.gallerySmall {
+		display: grid;
+		grid-template-columns: auto auto;
+
+		gap: 0.5rem;
+		margin: 0.5rem 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 @media (max-width: $tablet) {
 }
 
