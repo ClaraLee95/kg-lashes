@@ -52,7 +52,7 @@ function PriceListCard({ image, content, priceList }: PriceListCardProps) {
 	return (
 		<div className="priceListCardContentContainer fontText">
 			<div className="priceListCardContentLeft">
-				<img src={image.src} alt={image.alt} />
+				<img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
 			</div>
 			<div className="priceListCardContentMiddle">
 				<div className="priceListCardContentMiddleHeader fontSubheader">

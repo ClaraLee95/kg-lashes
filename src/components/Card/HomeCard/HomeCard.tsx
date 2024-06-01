@@ -10,7 +10,7 @@ function HomeCard({ image, content, nav, settings }: HomeCardProps) {
 	return (
 		<div className={"homeCardContainer " + imgLocation}>
 			<div className="homeCardImageContainer">
-				<img src={image.src} alt={image.alt} />
+				<img src={image.src} alt={image.alt} loading="lazy" decoding="async"/>
 			</div>
 			<div className="homeCardContentContainer fontText">
 				{settings.extraPlaced ? (

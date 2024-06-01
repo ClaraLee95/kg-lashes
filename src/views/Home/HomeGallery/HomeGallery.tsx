@@ -39,25 +39,25 @@ function HomeGallery() {
 				<div className="slider-container">
 					<Slider {...settings}>
 						<div className="sliderImageContainer">
-							<img src={example1} alt="Home Gallery Example"></img>
+							<img src={example1} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 						<div className="sliderImageContainer">
-							<img src={example2} alt="Home Gallery Example"></img>
+							<img src={example2} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 						<div className="sliderImageContainer">
-							<img src={example3} alt="Home Gallery Example"></img>
+							<img src={example3} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 						<div className="sliderImageContainer">
-							<img src={example4} alt="Home Gallery Example"></img>
+							<img src={example4} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 						<div className="sliderImageContainer">
-							<img src={example5} alt="Home Gallery Example"></img>
+							<img src={example5} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 						<div className="sliderImageContainer">
-							<img src={example6} alt="Home Gallery Example"></img>
+							<img src={example6} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 						<div className="sliderImageContainer">
-							<img src={example7} alt="Home Gallery Example"></img>
+							<img src={example7} alt="Home Gallery Example" loading="lazy" decoding="async"></img>
 						</div>
 					</Slider>
 				</div>

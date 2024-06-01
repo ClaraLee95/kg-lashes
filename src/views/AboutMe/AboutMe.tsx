@@ -18,7 +18,7 @@ function AboutMe() {
 					src={aboutMeLogo}
 					alt="KG Aesthetic Lashes Logo"
 				/>
-				<img src={aboutMe1} alt="" />
+				<img src={aboutMe1} alt="Profile" loading="lazy" decoding="async" />
 			</div>
 			<div className="aboutMeContentContainer">
 				<HomeCard
