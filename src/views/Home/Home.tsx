@@ -1,4 +1,3 @@
-import React from "react";
 import HomeLogo from "./HomeLogo/HomeLogo";
 import HomeAboutMe from "./HomeAboutMe/HomeAboutMe";
 import HomeServices from "./HomeServices/HomeServices";

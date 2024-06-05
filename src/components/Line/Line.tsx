@@ -1,4 +1,3 @@
-import React from "react";
 import "./Line.scss";
 import { LineProps } from "../../lib/types";
 

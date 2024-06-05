@@ -1,4 +1,3 @@
-import React from "react";
 import { PriceListCardProps } from "../../../lib/types";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Line from "../../../components/Line/Line";

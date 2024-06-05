@@ -1,4 +1,3 @@
-import React from "react";
 import PriceListCard from "../../components/Card/PriceListCard/PriceListCard";
 import "./PriceList.scss";
 

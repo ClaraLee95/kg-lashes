@@ -1,4 +1,3 @@
-import React from "react";
 import "./HomeFAQs.scss";
 import FaqCard from "../../../components/Card/FaqCard/FaqCard";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";

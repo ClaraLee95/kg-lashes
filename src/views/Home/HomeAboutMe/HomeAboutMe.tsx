@@ -1,4 +1,3 @@
-import React from "react";
 import HomeCard from "../../../components/Card/HomeCard/HomeCard";
 import profile from "../../../assets/home_about_me_example.jpg";
 import "./HomeAboutMe.scss";

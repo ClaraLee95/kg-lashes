@@ -1,4 +1,3 @@
-import React from "react";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import HomeCard from "../../components/Card/HomeCard/HomeCard";
 import image from "../../assets/services_example.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import example from "../../assets/home_gallery_example1.jpg";
 
 import "./Gallery.scss";

@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaqCardProps } from "../../../lib/types";
 import Button from "../../../components/Button/Button";

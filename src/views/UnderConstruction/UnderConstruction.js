@@ -1,4 +1,3 @@
-import React from "react";
 import logoBig from "../../assets/logo_big_black_shadow.png";
 import "./UnderConstruction.scss";
 

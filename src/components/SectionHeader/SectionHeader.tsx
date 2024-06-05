@@ -1,4 +1,3 @@
-import React from "react";
 import "./SectionHeader.scss";
 import Line from "../../components/Line/Line";
 import { type SectionHeaderProps } from "../../lib/types";
