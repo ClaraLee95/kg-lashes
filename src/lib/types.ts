@@ -1,8 +1,8 @@
-export type Theme = "light" | "dark" | "grey" | "transparent";
+export type ThemeType = "light" | "dark" | "grey" | "transparent";
 
-export type Location = "left" | "right" | "middle";
+export type LocationType = "left" | "right" | "middle";
 
-export type AllowedNav =
+export type AllowedNavType =
 	| "/"
 	| "uber-mich"
 	| "was-biete-ich"
@@ -11,60 +11,67 @@ export type AllowedNav =
 	| "galerie"
 	| "kontakt";
 
-export type ButtonProps = {
-	theme: Theme;
+export type ButtonType = {
+	theme: ThemeType;
 	text: string;
 };
 
-export type ImageProps = {
+export type ImageType = {
 	src: string;
 	alt: string;
-	location?: Location;
+	location?: LocationType;
 };
 
-export type ContentProps = {
+export type ContentType = {
 	header?: string;
 	text: string;
-	button?: ButtonProps | null;
+	button?: ButtonType | null;
 	extra?: JSX.Element | Array<string> | null;
 };
 
-export type PriceListProps = {
+export type PriceListType = {
 	title: string;
 	prices: Array<number>;
 };
 
-export type HomeCardProps = {
-	image: ImageProps;
-	content: ContentProps;
-	nav?: AllowedNav;
-	settings: HomeCardSettingProps;
+export type HomeCardType = {
+	image: ImageType;
+	content: ContentType;
+	nav?: AllowedNavType;
+	settings: HomeCardSettingType;
 };
 
-export type HomeCardSettingProps = {
+export type HomeCardSettingType = {
 	extraPlaced: boolean;
 	headerPlaced: boolean;
 	buttonPlaced: boolean;
 };
 
-export type FaqCardProps = {
-	content: ContentProps;
+export type FaqCardType = {
+	content: ContentType;
 };
 
-export type LineProps = {
+export type LineType = {
 	direction: "vertical" | "horizontal" | "verticalLong" | "horizontalThin";
-	theme: Theme;
+	theme: ThemeType;
 };
 
-export type PriceListCardProps = {
-	image: ImageProps;
-	content: ContentProps;
-	priceList: Array<PriceListProps>;
+export type PriceListCardType = {
+	image: ImageType;
+	content: ContentType;
+	priceList: Array<PriceListType>;
 };
 
-export type SectionHeaderProps = {
+export type SectionHeaderType = {
 	header: string;
-	theme: Theme;
-	direction: Location;
+	theme: ThemeType;
+	direction: LocationType;
 	extra?: string;
+};
+
+export type TwoByTwoGridType = {
+	leftTop: ImageType | JSX.Element;
+	rightTop: ImageType | JSX.Element;
+	leftBottom: ImageType | JSX.Element;
+	rightBottom: ImageType | JSX.Element;
 };
