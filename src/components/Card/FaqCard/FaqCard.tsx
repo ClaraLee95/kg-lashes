@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { FaqCardProps } from "../../../lib/types";
+import { type FaqCardType } from "../../../lib/types";
 import Button from "../../../components/Button/Button";
 import "./FaqCard.scss";
 
-function FaqCard({ content }: FaqCardProps) {
+function FaqCard({ content }: FaqCardType) {
 	return (
 		<div className="faqCardContentContainer fontText">
 			<div className="faqCardContentHeader fontSubheader">{content.header}</div>

@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { HomeCardProps } from "../../../lib/types";
+import { type HomeCardType } from "../../../lib/types";
 import Button from "../../../components/Button/Button";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
 import "./HomeCard.scss";
 
-function HomeCard({ image, content, nav, settings }: HomeCardProps) {
+function HomeCard({ image, content, nav, settings }: HomeCardType) {
 	const imgLocation = image.location === "left" ? "imageLeft" : "imageRight";
 	return (
 		<div className={"homeCardContainer " + imgLocation}>

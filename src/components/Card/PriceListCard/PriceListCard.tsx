@@ -1,9 +1,9 @@
-import { PriceListCardProps } from "../../../lib/types";
+import { type PriceListCardType } from "../../../lib/types";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Line from "../../../components/Line/Line";
 import "./PriceListCard.scss";
 
-function PriceListCard({ image, content, priceList }: PriceListCardProps) {
+function PriceListCard({ image, content, priceList }: PriceListCardType) {
 	const renderList = priceList.map((item, index) => {
 		let prices, line;
 		if (item.prices.length > 1) {

@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 import "./Footer.scss";
 import Line from "../../components/Line/Line";
-import { Theme } from "../../lib/types";
+import { type ThemeType } from "../../lib/types";
 
-function Footer({ className, theme }: { className: string; theme: Theme }) {
+function Footer({ className, theme }: { className: string; theme: ThemeType }) {
 	const year = new Date().getFullYear();
 	return (
 		<div className={"footerContainer " + className}>

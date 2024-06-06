@@ -1,13 +1,8 @@
 import "./SectionHeader.scss";
 import Line from "../../components/Line/Line";
-import { type SectionHeaderProps } from "../../lib/types";
+import { type SectionHeaderType } from "../../lib/types";
 
-function SectionHeader({
-	header,
-	theme,
-	direction,
-	extra,
-}: SectionHeaderProps) {
+function SectionHeader({ header, theme, direction, extra }: SectionHeaderType) {
 	const extraLineBeforeText =
 		direction === "middle" ? (
 			<>

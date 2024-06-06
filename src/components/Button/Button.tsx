@@ -1,7 +1,7 @@
 import "./Button.scss";
-import { type ButtonProps } from "../../lib/types";
+import { type ButtonType } from "../../lib/types";
 
-function Button({ theme, text }: ButtonProps) {
+function Button({ theme, text }: ButtonType) {
 	return <div className={"buttonCustom " + theme}>{text}</div>;
 }
 

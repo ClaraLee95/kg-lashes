@@ -1,7 +1,7 @@
 import "./Line.scss";
-import { LineProps } from "../../lib/types";
+import { type LineType } from "../../lib/types";
 
-function Line({ direction, theme }: LineProps) {
+function Line({ direction, theme }: LineType) {
 	return (
 		<div className={"lineContainer " + direction}>
 			<div className={"line " + direction + " " + theme}></div>

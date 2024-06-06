@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Theme } from "./lib/types";
+import { type ThemeType } from "./lib/types";
 
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -23,8 +23,8 @@ const App = () => {
 	const [currentLocation, setCurrentLocation] = useState("/");
 
 	let bodyClass = "backgroundLight fontDark",
-		theme = "light" as Theme,
-		lineColor = "dark" as Theme;
+		theme = "light" as ThemeType,
+		lineColor = "dark" as ThemeType;
 
 	if (
 		location.pathname === "/was-biete-ich" ||
