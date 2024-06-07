@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import "./CookieConsentBanner.scss";
 import { NavLink } from "react-router-dom";
 
-const CookieConsentBanner: React.FC = () => {
+function CookieConsentBanner() {
 	const [isVisible, setIsVisible] = useState(true);
 	const [isMinimized, setIsMinimized] = useState(false);
 	const [showBadge, setShowBadge] = useState(false);
