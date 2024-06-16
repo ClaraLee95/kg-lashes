@@ -160,6 +160,16 @@ body {
 		width: 100vw;
 		height: 80vh;
 	}
+
+	.pageContainer {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.pageContainer::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media (max-width: $small-tablet) {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { type ThemeType } from "./lib/types";
 
-import NavBar from "./components/NavBar/Navbar";
+import MenuBar from "./components/Menu/MenuBar/MenuBar";
 import Footer from "./components/Footer/Footer";
 import CookieConsentBanner from "./components/CookieConsentBanner/CookieConsentBanner";
 import Home from "./views/Home/Home";
@@ -49,7 +49,7 @@ const App = () => {
 
 	return (
 		<div className={"pageContainer " + bodyClass}>
-			<NavBar className="fontMenu" theme={theme} />
+			<MenuBar className="fontMenu" theme={theme} />
 			<div className="container">
 				<Routes>
 					<Route path="/" element={<Home></Home>}></Route>

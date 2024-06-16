@@ -1,4 +1,4 @@
-@import "../../custom.scss";
+@import "../../../custom.scss";
 
 .navBar {
 	display: flex;
@@ -32,29 +32,28 @@
 		text-decoration: underline !important;
 		text-underline-position: under;
 	}
+
+	.menuContainerFullNav {
+		display: flex;
+	}
+	.menuContainerHamburger {
+		display: none;
+	}
 }
 
 @media (max-width: $tablet) {
-	.navBar {
-		padding-top: 1.5rem;
+	.menuContainer {
+		.menuContainerFullNav {
+			display: none;
+		}
+		.menuContainerHamburger {
+			display: flex;
+		}
 	}
 }
 
 @media (max-width: $small-tablet) {
-	.navBar {
-		padding-top: 1.3rem;
-
-		.logoSmall {
-			width: 35px;
-		}
-	}
 }
 
 @media (max-width: $phone) {
-	.navBar {
-		padding-left: 1.5rem;
-		.logoSmall {
-			width: 28px;
-		}
-	}
 }

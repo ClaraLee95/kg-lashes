@@ -1,0 +1,56 @@
+@import "../../../custom.scss";
+
+@media (max-width: $tablet) {
+	.hamburgerMenuContainer {
+		position: relative;
+		margin-right: 2rem;
+
+		z-index: 100;
+
+		.hamburgerMenuIcon {
+			display: flex;
+			flex-direction: column;
+			cursor: pointer;
+		}
+
+		.hamburgerSideContainer {
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			right: -250px;
+			top: 0;
+			height: 100%;
+			width: 250px;
+
+			padding-top: 0.5rem;
+
+			background-color: rgba($darkest, 0.95);
+			box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+			transition: 0.4s;
+
+			.sideCloseIcon {
+				margin: 1rem;
+				background: none;
+				border: none;
+
+				cursor: pointer;
+				transition: transform 0.4s;
+
+				-webkit-filter: invert(100%); /* Safari/Chrome */
+				filter: invert(100%);
+			}
+
+			&.open {
+				right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: $small-tablet) {
+}
+
+@media (max-width: $phone) {
+}
