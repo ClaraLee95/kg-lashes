@@ -13,7 +13,8 @@ function FaqCard({ content }: FaqCardType) {
 					<NavLink to="faqs" style={{ textDecoration: "none" }}>
 						<Button
 							theme={content.button.theme}
-							text={content.button.text}></Button>
+							text={content.button.text}
+							switchTheme="switchOnSmall"></Button>
 					</NavLink>
 				) : (
 					""

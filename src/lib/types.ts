@@ -14,6 +14,7 @@ export type AllowedNavType =
 export type ButtonType = {
 	theme: ThemeType;
 	text: string;
+	switchTheme?: "switchOnSmall" | "";
 };
 
 export type ImageType = {

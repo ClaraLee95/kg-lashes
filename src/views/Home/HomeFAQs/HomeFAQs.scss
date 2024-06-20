@@ -29,9 +29,47 @@
 }
 
 @media (max-width: $tablet) {
+	.homeFaqsContainer {
+		margin-left: calc(-50vw + 50%);
+
+		.container {
+			width: 80%;
+
+			.homeFaqsCardContainer {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				justify-content: space-between;
+				row-gap: 0.5rem;
+
+				padding: 2rem 0.5rem;
+
+				margin: auto;
+			}
+		}
+	}
 }
 
 @media (max-width: $small-tablet) {
+	.homeFaqsContainer {
+		.container {
+			width: 100%;
+
+			.homeFaqsSectionHeader {
+				padding: 0;
+				padding-top: 1rem;
+			}
+
+			.homeFaqsCardContainer {
+				display: grid;
+				grid-template-columns: 1fr;
+				row-gap: 1rem;
+
+				padding: 2rem 0rem;
+
+				margin: auto;
+			}
+		}
+	}
 }
 
 @media (max-width: $phone) {

@@ -26,9 +26,31 @@
 }
 
 @media (max-width: $tablet) {
+	.faqCardContentContainer {
+		width: 80%;
+		margin: 0 auto;
+
+		.faqCardContentHeader {
+			min-height: auto;
+			text-align: center;
+		}
+
+		.faqCardContentText {
+			text-align: center;
+		}
+
+		.faqCardButtonContainer {
+			align-items: center;
+			margin: 1rem auto;
+		}
+	}
 }
 
 @media (max-width: $small-tablet) {
+	.faqCardContentContainer {
+		width: 95%;
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: $phone) {

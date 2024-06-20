@@ -42,6 +42,26 @@
 }
 
 @media (max-width: $tablet) {
+	.switchOnSmall {
+		padding: 0.5rem 2rem;
+		font-weight: 900;
+
+		&.light {
+			background-color: $darkest;
+			color: white;
+		}
+
+		&.dark {
+			color: $darkest;
+			font-weight: 500;
+		}
+
+		&.transparent {
+			border: none;
+			background-color: $darkest;
+			color: white;
+		}
+	}
 }
 
 @media (max-width: $small-tablet) {

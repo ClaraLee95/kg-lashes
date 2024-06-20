@@ -158,7 +158,10 @@ body {
 @media (max-width: $tablet) {
 	body {
 		width: 100vw;
-		height: 80vh;
+		height: 100vh;
+		box-sizing: border-box;
+
+		overflow-x: hidden;
 	}
 
 	.pageContainer {
@@ -173,6 +176,10 @@ body {
 }
 
 @media (max-width: $small-tablet) {
+	.pageContainer {
+		row-gap: 0rem;
+	}
 }
+
 @media (max-width: $phone) {
 }

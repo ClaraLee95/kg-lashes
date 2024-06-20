@@ -9,7 +9,7 @@ function HomeCard({ image, content, nav, settings }: HomeCardType) {
 	return (
 		<div className={"homeCardContainer " + imgLocation}>
 			<div className="homeCardImageContainer">
-				<img src={image.src} alt={image.alt} loading="lazy" decoding="async"/>
+				<img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
 			</div>
 			<div className="homeCardContentContainer fontText">
 				{settings.extraPlaced ? (
@@ -27,12 +27,13 @@ function HomeCard({ image, content, nav, settings }: HomeCardType) {
 						) : null}
 					</div>
 					<div className="homeCardContentText">{content.text}</div>
-					<div>
+					<div className="homeCardContentButton">
 						{settings.buttonPlaced && content.button ? (
 							<NavLink to={nav!} style={{ textDecoration: "none" }}>
 								<Button
 									theme={content.button.theme}
-									text={content.button.text}></Button>
+									text={content.button.text}
+									switchTheme="switchOnSmall"></Button>
 							</NavLink>
 						) : null}
 					</div>

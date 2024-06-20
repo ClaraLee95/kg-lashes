@@ -1,26 +1,31 @@
 @import "../../../custom.scss";
 
-.homeCardImageContainer {
-	width: 50%;
-	margin: auto;
-
-	img {
-		max-width: 100%;
-		max-height: 100%;
-	}
-}
-
-.homeCardContentContainer {
+.homeCardContainer {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 2rem;
+	flex-direction: row;
 
-	width: 50%;
+	.homeCardImageContainer {
+		width: 50%;
+		margin: auto;
 
-	.homeCardContentText {
-		padding: 1rem 0;
-		text-align: justify;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	.homeCardContentContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 2rem;
+
+		width: 50%;
+
+		.homeCardContentText {
+			padding: 1rem 0;
+			text-align: justify;
+		}
 	}
 }
 
@@ -37,9 +42,38 @@
 }
 
 @media (max-width: $tablet) {
+	.homeCardContainer {
+		display: flex;
+		flex-direction: column;
+
+		width: 80%;
+		margin: auto;
+
+		.homeCardImageContainer {
+			width: 100%;
+		}
+
+		.homeCardContentContainer {
+			display: flex;
+			margin: auto;
+			width: 100%;
+
+			padding: 2rem 0;
+
+			font-size: 1.5rem;
+			font-weight: 500;
+
+			.homeCardContentButton {
+				float: right;
+			}
+		}
+	}
 }
 
 @media (max-width: $small-tablet) {
+	.homeCardContainer {
+		width: 100%;
+	}
 }
 
 @media (max-width: $phone) {
