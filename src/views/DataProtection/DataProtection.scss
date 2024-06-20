@@ -45,7 +45,8 @@
 
 @media (max-width: $tablet) {
 	.datenschutzContainer {
-		width: 90vw;
+		width: fit-content;
+		margin: auto;
 
 		.datenschutzHeader {
 			font-size: 3rem;
@@ -68,22 +69,27 @@
 
 @media (max-width: $small-tablet) {
 	.datenschutzContainer {
-		width: 95vw;
+		width: fit-content;
+		padding: 2rem 0;
 
 		.datenschutzHeader {
 			font-size: 2.3rem;
+			padding: 1rem;
 		}
 
 		.datenschutzText {
-			padding: 2rem;
-			padding-top: 1rem;
+			padding: 1rem;
+			padding-top: 0rem;
 		}
 	}
 }
 
 @media (max-width: $phone) {
 	.datenschutzContainer {
-		width: 95vw;
+		width: 80vw;
+		margin: auto;
+		margin-bottom: 0;
+		gap: 2rem;
 
 		.datenschutzHeader {
 			font-size: 1.4rem;

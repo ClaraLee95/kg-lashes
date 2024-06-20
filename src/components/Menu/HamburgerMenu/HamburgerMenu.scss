@@ -31,7 +31,7 @@
 			transition: 0.4s;
 
 			.sideCloseIcon {
-				margin: 1rem;
+				margin: 1rem 0.5rem;
 				background: none;
 				border: none;
 
@@ -53,4 +53,12 @@
 }
 
 @media (max-width: $phone) {
+	.hamburgerMenuContainer {
+		margin-right: 0;
+
+		.hamburgerSideContainer {
+			right: -150px;
+			width: 150px;
+		}
+	}
 }
