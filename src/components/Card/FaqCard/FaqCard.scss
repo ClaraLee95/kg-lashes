@@ -54,4 +54,8 @@
 }
 
 @media (max-width: $phone) {
+	.faqCardContentContainer {
+		width: 100%;
+		padding: 2rem 0;
+	}
 }

@@ -27,7 +27,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					Home
 				</NavLink>
@@ -36,7 +35,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					Über Mich
 				</NavLink>
@@ -45,7 +43,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					Was Biete Ich
 				</NavLink>
@@ -54,7 +51,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					Preisliste
 				</NavLink>
@@ -63,7 +59,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					FAQs
 				</NavLink>
@@ -72,7 +67,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					Galerie
 				</NavLink>
@@ -81,7 +75,6 @@ function HamburgerMenu() {
 					style={{
 						textDecoration: "none",
 						color: "white",
-						fontSize: "1.7rem",
 					}}>
 					Kontakt
 				</NavLink>

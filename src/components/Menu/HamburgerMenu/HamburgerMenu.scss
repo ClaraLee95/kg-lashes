@@ -3,14 +3,14 @@
 @media (max-width: $tablet) {
 	.hamburgerMenuContainer {
 		position: relative;
-		margin-right: 2rem;
-
 		z-index: 100;
 
 		.hamburgerMenuIcon {
 			display: flex;
 			flex-direction: column;
 			cursor: pointer;
+
+			margin-right: 2rem;
 		}
 
 		.hamburgerSideContainer {
@@ -45,6 +45,10 @@
 			&.open {
 				right: 0;
 			}
+
+			a {
+				font-size: 1.7rem;
+			}
 		}
 	}
 }
@@ -54,11 +58,17 @@
 
 @media (max-width: $phone) {
 	.hamburgerMenuContainer {
-		margin-right: 0;
+		.hamburgerMenuIcon {
+			margin-right: 0;
+		}
 
 		.hamburgerSideContainer {
-			right: -150px;
-			width: 150px;
+			right: -200px;
+			width: 200px;
+
+			a {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

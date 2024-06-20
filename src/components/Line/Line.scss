@@ -53,11 +53,13 @@
 
 @media (max-width: $phone) {
 	.lineContainer {
-		padding: 0.2rem;
+		padding-top: 10px;
 
 		.line {
-			width: 20px;
-			height: 1.5px;
+			&.vertical {
+				width: 20px;
+				height: 1.5px;
+			}
 		}
 	}
 }

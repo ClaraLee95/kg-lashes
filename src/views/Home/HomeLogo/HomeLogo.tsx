@@ -5,17 +5,11 @@ import "./HomeLogo.scss";
 function HomeLogo() {
 	return (
 		<div className="homeLogoContainer">
-			<img
-				className="blob"
-				src={blob}
-				alt=""
-				style={{ width: 650, margin: "auto" }}
-			/>
+			<img className="blob" src={blob} alt="" />
 			<img
 				className="logoBigWhite"
 				src={logoBigWhite}
 				alt="AG Aesthetic Lashes"
-				style={{ width: 450, margin: "auto" }}
 			/>
 		</div>
 	);
