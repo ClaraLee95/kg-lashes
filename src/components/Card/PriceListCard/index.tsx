@@ -6,7 +6,9 @@ import "./index.scss";
 
 function PriceListCard({ image, content, priceList }: PriceListCardType) {
 	const renderList = priceList.map((item, index) => {
-		let prices, line;
+		let prices,
+			line,
+			key = item.title + "-" + index;
 		if (item.prices.length > 1) {
 			prices = (
 				<>
@@ -39,13 +41,13 @@ function PriceListCard({ image, content, priceList }: PriceListCardType) {
 		}
 
 		return (
-			<>
+			<div key={key}>
 				<div className="priceOneLineContainer">
 					<div className="priceOneLineTitle fontTextBold">{item.title}</div>
 					<div className="priceOneLinePrices fontNumber">{prices}</div>
 				</div>
 				<div>{line}</div>
-			</>
+			</div>
 		);
 	});
 

@@ -85,6 +85,7 @@ function PriceList() {
 	const renderList = items.map((item) => {
 		return (
 			<PriceListCard
+				key={item.content.header}
 				image={{
 					src: item.image.src,
 					alt: item.image.alt,

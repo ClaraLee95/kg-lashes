@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { acceptCookie, declineCookie } from "../../utils/cookie/cookieSlice";
 import { IoFingerPrint } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { NavLink } from "react-router-dom";
@@ -6,6 +8,10 @@ import { NavLink } from "react-router-dom";
 import "./index.scss";
 
 function CookieConsentBanner() {
+	// utils
+	const dispatch = useDispatch();
+
+	// local states
 	const [isVisible, setIsVisible] = useState(true);
 	const [isMinimized, setIsMinimized] = useState(false);
 	const [showBadge, setShowBadge] = useState(false);
@@ -36,12 +42,14 @@ function CookieConsentBanner() {
 		setIsVisible(false);
 		handleShowBadge(true);
 		setSetting("Accepted");
+		dispatch(acceptCookie());
 	};
 
 	const handleDecline = () => {
 		setIsVisible(false);
 		handleShowBadge(true);
 		setSetting("Declined");
+		dispatch(declineCookie());
 	};
 
 	const handleClose = () => {
@@ -59,9 +67,9 @@ function CookieConsentBanner() {
 	return (
 		<div>
 			<div
-				className={`fontLight cookieBannerFull ${!isVisible ? "fadeOut" : ""} ${
-					isMinimized ? "minimized" : ""
-				}`}>
+				className={`fontLight fontFormal cookieBannerFull ${
+					!isVisible ? "fadeOut" : ""
+				} ${isMinimized ? "minimized" : ""}`}>
 				{!isMinimized && (
 					<>
 						<span className="fingerprintIcon">
@@ -99,12 +107,14 @@ function CookieConsentBanner() {
 						<IoFingerPrint />
 					</span>
 					{showBadge && (
-						<span className="badge fadeInOut">Setting Saved: {setting}</span>
+						<span className="badge fontFormal fadeInOut">
+							Setting Saved: {setting}
+						</span>
 					)}
 				</div>
 			)}
 		</div>
 	);
-};
+}
 
 export default CookieConsentBanner;
