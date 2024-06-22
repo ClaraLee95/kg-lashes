@@ -17,6 +17,7 @@ function CookieConsentBanner() {
 	const [showBadge, setShowBadge] = useState(false);
 	const [timeOutId, setTimeOutId] = useState(Array<number>);
 	const [setting, setSetting] = useState("");
+	const [isChangeMode, setIsChangeMode] = useState(false);
 
 	useEffect(() => {
 		if (!isVisible) {
@@ -40,19 +41,30 @@ function CookieConsentBanner() {
 
 	const handleAccept = () => {
 		setIsVisible(false);
-		handleShowBadge(true);
-		setSetting("Accepted");
 		dispatch(acceptCookie());
+
+		const id = window.setTimeout(() => {
+			setSetting("Akzeptiert");
+			setIsChangeMode(false);
+			handleShowBadge(true);
+		}, 500);
+		setTimeOutId([...timeOutId, id]);
 	};
 
 	const handleDecline = () => {
 		setIsVisible(false);
-		handleShowBadge(true);
-		setSetting("Declined");
 		dispatch(declineCookie());
+
+		const id = window.setTimeout(() => {
+			setSetting("Abgelehnt");
+			setIsChangeMode(false);
+			handleShowBadge(true);
+		}, 500);
+		setTimeOutId([...timeOutId, id]);
 	};
 
 	const handleClose = () => {
+		setIsChangeMode(false);
 		setIsVisible(false);
 		handleShowBadge(false);
 	};
@@ -62,6 +74,10 @@ function CookieConsentBanner() {
 		timeOutId.forEach((id) => {
 			clearTimeout(id);
 		});
+	};
+
+	const handleChange = () => {
+		setIsChangeMode(true);
 	};
 
 	return (
@@ -76,28 +92,45 @@ function CookieConsentBanner() {
 							<IoFingerPrint />
 						</span>
 						<div className="cookieContent">
-							<span>
-								Our website does not use cookies. However, we have links that
-								redirects you to Instagram, which may use cookies or similar
-								technologies.
-								<NavLink
-									to="/datenschutz"
-									style={{ paddingLeft: "1rem", color: "white" }}>
-									Learn more
-								</NavLink>
-							</span>
-							<div className="cookieButtons">
-								<button className="cookieDecline" onClick={handleDecline}>
-									Decline
-								</button>
-								<button className="cookieAccept" onClick={handleAccept}>
-									Accept
-								</button>
-								<span className="closeIcon" onClick={handleClose}>
-									<IoMdClose />
-								</span>
-							</div>
+							{setting === "" || isChangeMode ? (
+								<div className={setting !== "" && isChangeMode ? "fadeIn" : ""}>
+									<div className="cookieText">
+										Unsere Website verwendet keine Cookies. Wir haben jedoch
+										Links, die Sie zu Instagram weiterleiten, wo möglicherweise
+										Cookies oder ähnliche Technologien verwendet werden.
+										<NavLink
+											to="/datenschutz"
+											style={{ paddingLeft: "1rem", color: "white" }}>
+											Mehr erfahren
+										</NavLink>
+									</div>
+									<div className="cookieButtons">
+										<button className="cookieAccept" onClick={handleAccept}>
+											Akzeptieren
+										</button>
+										<button className="cookieDecline" onClick={handleDecline}>
+											Ablehnen
+										</button>
+									</div>
+								</div>
+							) : (
+								<div className={isChangeMode ? "fadeIn" : ""}>
+									<div className="cookieTextFlex">
+										<span>
+											Aktuelle Cookies-Einstellung: <strong>{setting}</strong>
+										</span>
+									</div>
+									<div className="cookieButtons">
+										<button className="cookieDecline" onClick={handleChange}>
+											Verwalten
+										</button>
+									</div>
+								</div>
+							)}
 						</div>
+						<span className="closeIcon" onClick={handleClose}>
+							<IoMdClose />
+						</span>
 					</>
 				)}
 			</div>

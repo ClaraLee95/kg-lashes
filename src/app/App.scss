@@ -26,14 +26,16 @@ body {
 	scrollbar-gutter: stable;
 	// width: calc(100vw - 6px);
 
-	width: 100%;
+	width: 100vw;
 	max-width: 100vw;
 	box-sizing: border-box;
 
-	height: calc(80vh - 20px);
+	// height: calc(80vh - 20px);
 	z-index: 1;
 	// scrollbar-gutter: stable both-edges;
 	white-space: initial;
+
+	overflow-x: hidden;
 }
 
 .pageContainer {
@@ -48,14 +50,21 @@ body {
 	flex: 1;
 }
 
+/* -------- Bootstrap Modal -------- */
+.modal-open {
+	padding-right: 0px !important;
+	// position: fixed;
+}
+
 /* -------- Scroll Bar -------- */
 * {
 	scrollbar-width: thin;
 	scrollbar-color: #888 none;
 }
+
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 6px;
+	height: 6px;
 }
 
 /* Track */
@@ -66,7 +75,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #888;
-	border-radius: 10px;
+	border-radius: 6px;
 }
 
 /* Handle on hover */
@@ -165,8 +174,6 @@ body {
 		width: 100vw;
 		height: 100vh;
 		box-sizing: border-box;
-
-		overflow-x: hidden;
 	}
 
 	.pageContainer {
