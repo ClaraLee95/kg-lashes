@@ -1,10 +1,26 @@
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
+// require("dotenv").config();
 
-const db = require('./models')
+const sequelize = require("./config/database");
 
-db.sequelize.sync().then(() => {
-	app.listen(3001, () => {
-		console.log("hi")
-	})
-})
+async function test() {
+	try {
+		await sequelize.authenticate();
+		console.log("Connection has been established successfully.");
+	} catch (error) {
+		console.error("Unable to connect to the database:", error);
+	}
+}
+
+test();
+
+// const express = require("express");
+// const app = express();
+// const db = require("./models");
+
+// db.sequelize.snyc().then(() => {
+// 	app.listen(3006, () => {
+// 		"running";
+// 	});
+// });
