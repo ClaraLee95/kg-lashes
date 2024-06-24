@@ -1,7 +1,7 @@
 import HomeCard from "../../components/Card/HomeCard";
 import aboutMe1 from "../../assets/about_me_example1.webp";
 import aboutMe2 from "../../assets/about_me_example2.webp";
-import aboutMeLogo from "../../assets/logo_big_black_no_shadow.png";
+import aboutMeLogo from "../../assets/logo_big_black_no_shadow.avif";
 
 import "./index.scss";
 

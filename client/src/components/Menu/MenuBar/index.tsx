@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import logoSmallBlack from "../../../assets/logo_small_black.png";
-import logoSmallWhite from "../../../assets/logo_small_white.png";
+import logoSmallBlack from "../../../assets/logo_small_black.avif";
+import logoSmallWhite from "../../../assets/logo_small_white.avif";
 import FullNavMenu from "../FullNavMenu";
 import HamburgerMenu from "../HamburgerMenu";
 

@@ -1,4 +1,4 @@
-import logoBig from "../../assets/logo_big_black_shadow.png";
+import logoBig from "../../assets/logo_big_black_no_shadow.avif";
 import { FaPhone } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 
