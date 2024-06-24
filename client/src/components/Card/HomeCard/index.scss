@@ -73,6 +73,16 @@
 @media (max-width: $small-tablet) {
 	.homeCardContainer {
 		width: 100%;
+
+		.homeCardContentContainer {
+			font-size: 1.2rem;
+			font-weight: 500;
+			padding: 0.5rem 0;
+
+			.homeCardContentText {
+				padding: 0;
+			}
+		}
 	}
 }
 
@@ -83,6 +93,7 @@
 		.homeCardContentContainer {
 			font-size: 1.2rem;
 			font-weight: 500;
+			padding: 0.5rem 0;
 		}
 	}
 }

@@ -43,6 +43,15 @@
 }
 
 @media (max-width: $small-tablet) {
+	.galleryContainer {
+		margin: 3rem auto;
+	}
+
+	.galleryTop {
+		.galleryTitle {
+			font-size: 5rem;
+		}
+	}
 }
 
 @media (max-width: $phone) {

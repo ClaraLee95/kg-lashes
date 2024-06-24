@@ -24,6 +24,17 @@
 }
 
 @media (max-width: $small-tablet) {
+	.priceListHeaderContainer {
+		.priceListHeader {
+			font-size: 5rem;
+			padding-left: 3rem;
+		}
+	}
+
+	.priceListContentContainer {
+		margin-top: 3rem;
+		padding: 2rem 0rem;
+	}
 }
 
 @media (max-width: $phone) {

@@ -192,6 +192,52 @@
 }
 
 @media (max-width: $small-tablet) {
+	.cookieBannerFull {
+		padding: 1rem 0.5rem;
+	}
+
+	.cookieContent {
+		margin: auto;
+
+		div {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+
+			.cookieText {
+				font-size: 0.8rem;
+				margin: auto;
+				padding: 0.5rem;
+			}
+
+			.cookieButtons {
+				margin: auto 0;
+
+				display: flex;
+				flex-direction: column-reverse;
+
+				button {
+					margin: 0.5rem;
+				}
+			}
+		}
+	}
+
+	.fingerprintIcon {
+		font-size: 18px;
+
+		&.minimized {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	.minimizedContainer {
+		.badge {
+			padding: 0.2rem 0.5rem;
+			margin: 0.5rem 3rem;
+			font-size: 0.8rem;
+		}
+	}
 }
 
 @media (max-width: $phone) {

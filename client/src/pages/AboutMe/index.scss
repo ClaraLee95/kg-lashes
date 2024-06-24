@@ -33,4 +33,19 @@
 }
 
 @media (max-width: $phone) {
+	.aboutMeHeaderContainer {
+		padding: 1.5rem 0;
+
+		.aboutMeHeaderLogo {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.aboutMeContentContainer {
+		margin: 5rem 0.5rem;
+	}
 }

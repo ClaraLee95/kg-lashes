@@ -79,6 +79,26 @@ mark.scrollHighlight {
 }
 
 @media (max-width: $small-tablet) {
+	.servicesTop {
+		.servicesTitle {
+			font-size: 5rem;
+		}
+
+		.servicesSubtitle {
+			margin: 3rem auto;
+			width: 85%;
+
+			.quoteText {
+				width: 95%;
+				margin: auto;
+			}
+		}
+	}
+
+	.serviceContentContainer {
+		gap: 8rem;
+		margin: 5rem 2.5rem;
+	}
 }
 
 @media (max-width: $phone) {

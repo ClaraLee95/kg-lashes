@@ -59,7 +59,11 @@
 @media (max-width: $phone) {
 	.navBar {
 		.logoContainer {
-			margin-left: 0;
+			margin-left: 0.5rem;
+
+			.logoSmall {
+				width: 30px;
+			}
 		}
 	}
 }
