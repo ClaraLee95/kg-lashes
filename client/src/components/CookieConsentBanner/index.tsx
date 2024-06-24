@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { acceptCookie, declineCookie } from "../../utils/cookie/cookieSlice";
+import { updateCookie } from "../../utils/cookie/cookieSlice";
 import { IoFingerPrint } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { NavLink } from "react-router-dom";
@@ -41,7 +41,7 @@ function CookieConsentBanner() {
 
 	const handleAccept = () => {
 		setIsVisible(false);
-		dispatch(acceptCookie());
+		dispatch(updateCookie(true));
 
 		const id = window.setTimeout(() => {
 			setSetting("Akzeptiert");
@@ -53,7 +53,7 @@ function CookieConsentBanner() {
 
 	const handleDecline = () => {
 		setIsVisible(false);
-		dispatch(declineCookie());
+		dispatch(updateCookie(false));
 
 		const id = window.setTimeout(() => {
 			setSetting("Abgelehnt");

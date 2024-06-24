@@ -6,16 +6,13 @@ export const cookieSlice = createSlice({
 		cookieAccepted: false,
 	},
 	reducers: {
-		acceptCookie: (state) => {
-			state.cookieAccepted = true;
-		},
-		declineCookie: (state) => {
-			state.cookieAccepted = false;
+		updateCookie: (state, action) => {
+			state.cookieAccepted = action.payload;
 		},
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { acceptCookie, declineCookie } = cookieSlice.actions;
+export const { updateCookie } = cookieSlice.actions;
 
 export default cookieSlice.reducer;

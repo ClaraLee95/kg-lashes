@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./index.scss";
 
@@ -30,9 +29,7 @@ function Popup(props: PopupProps) {
 					{props.header}
 				</Modal.Title>
 			</Modal.Header>
-			<Modal.Body className="fontFormal fontLight">
-				{props.content}
-			</Modal.Body>
+			<Modal.Body className="fontFormal fontLight">{props.content}</Modal.Body>
 		</Modal>
 	);
 }
